@@ -16,7 +16,12 @@ function App() {
                 <div className="main">
                     <div className="profile">
                         <div className="info">
-                            <img src="/images/self.png" alt="self" />
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL + '/images/self.png'
+                                }
+                                alt="self"
+                            />
                             <div className="name">
                                 <h1>이승헌 | Seungheon Lee</h1>
                                 <p>Front-End Programmer</p>
