@@ -6,16 +6,22 @@ import Skills from './Skills';
 import Certificate from './Certificate';
 import Projects from './Projects';
 
-function PortFolio() {
+function PortFolio({ portfolio }) {
+    const { profile, about, history, skills, certificate, projects } =
+        portfolio;
     return (
         <main>
             <div className="main">
-                <Profile />
-                <About />
-                <History />
-                <Skills />
-                <Certificate />
-                <Projects />
+                <Profile
+                    selfSrc={profile.self}
+                    name={profile.name}
+                    job={profile.job}
+                />
+                <About title={about.title} contents={about.contents} />
+                <History history={history} />
+                <Skills skills={skills} />
+                <Certificate certificate={certificate} />
+                <Projects projects={projects} />
             </div>
         </main>
     );

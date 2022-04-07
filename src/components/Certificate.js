@@ -1,20 +1,17 @@
 import './components.scss';
 
-function Certificate() {
+function Certificate({ certificate }) {
     return (
         <div className="certificate">
             <h2>CERTIFICATE</h2>
             <table>
-                <tr>
-                    <td>정보처리기사</td>
-                    <td>한국산업인력공단</td>
-                    <td>2021/06</td>
-                </tr>
-                <tr>
-                    <td>SQL 개발자(SQLD)</td>
-                    <td>한국데이터산업진흥원</td>
-                    <td>2021/04</td>
-                </tr>
+                {certificate.map((x) => (
+                    <tr>
+                        <td>{x.name}</td>
+                        <td>{x.issuer}</td>
+                        <td>{x.date}</td>
+                    </tr>
+                ))}
             </table>
         </div>
     );

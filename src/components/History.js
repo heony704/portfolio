@@ -1,14 +1,20 @@
 import './components.scss';
 
-function History() {
+function History({ history }) {
     return (
         <div className="history">
             <h2>HISTORY</h2>
             <table>
-                <tr>
-                    <td>2016/03 ~ 2021/08</td>
-                    <td>전북대학교 소프트웨어공학과 졸업</td>
-                </tr>
+                {history.map((x) => (
+                    <tr>
+                        <td>
+                            {x.startYear}/
+                            {String(x.startMonth).padStart(2, '0')} ~{' '}
+                            {x.endYear}/{String(x.endMonth).padStart(2, '0')}
+                        </td>
+                        <td>{x.contents}</td>
+                    </tr>
+                ))}
             </table>
         </div>
     );

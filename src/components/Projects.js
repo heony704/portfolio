@@ -1,6 +1,6 @@
 import './components.scss';
 
-function Projects() {
+function Projects({ projects }) {
     return (
         <div className="projects">
             <div className="title">
