@@ -1,5 +1,11 @@
+import './components.scss';
+
 function Footer() {
-    return <></>;
+    return (
+        <footer>
+            <p>developed by seungheon Lee .</p>
+        </footer>
+    );
 }
 
 export default Footer;

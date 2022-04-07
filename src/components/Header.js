@@ -1,8 +1,14 @@
+import './components.scss';
+
 function Header() {
     return (
         <header>
-            <p>Seungheon's Portfolio</p>
-            {/* pdf 저장 버튼, 색 반전 버튼 */}
+            <div className="header">
+                <div className="contents">
+                    <p>HEONY's POFO</p>
+                    <p>button</p>
+                </div>
+            </div>
         </header>
     );
 }
