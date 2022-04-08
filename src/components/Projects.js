@@ -26,8 +26,10 @@ function Projects({ projects }) {
                 <div className="top">
                     {projects.map((project) => (
                         <ProjectName
+                            key={project.id}
                             id={project.id}
                             name={project.name}
+                            all={all}
                             onVisible={onVisible}
                         />
                     ))}
@@ -36,7 +38,7 @@ function Projects({ projects }) {
             </div>
             <div className="contents">
                 {projects.map((project) => (
-                    <ProjectContents project={project} />
+                    <ProjectContents key={project.id} project={project} />
                 ))}
             </div>
         </div>

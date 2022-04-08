@@ -9,8 +9,8 @@ function ProjectContents({ project }) {
             <div className="date">{date}</div>
             <h1>{name}</h1>
             <div className="tech">
-                {skills.map((skill) => (
-                    <p>{skill}</p>
+                {skills.map((skill, i) => (
+                    <p key={i}>{skill}</p>
                 ))}
             </div>
             <h2>{summary.title}</h2>

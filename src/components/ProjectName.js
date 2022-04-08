@@ -1,7 +1,7 @@
 import './components.scss';
 import { useState } from 'react';
 
-function ProjectName({ id, name, onVisible }) {
+function ProjectName({ id, name, all, onVisible }) {
     const [clicked, setClicked] = useState(false);
     const onClick = () => {
         setClicked(!clicked);

@@ -5,8 +5,8 @@ function Skills({ skills }) {
         <div className="skills">
             <h2>SKILLS</h2>
             <div>
-                {skills.map((x) => (
-                    <img src={x.imgSrc} alt={x.name} />
+                {skills.map((x, i) => (
+                    <img key={i} src={x.imgSrc} alt={x.name} />
                 ))}
             </div>
         </div>

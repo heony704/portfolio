@@ -5,8 +5,8 @@ function Certificate({ certificate }) {
         <div className="certificate">
             <h2>CERTIFICATE</h2>
             <table>
-                {certificate.map((x) => (
-                    <tr>
+                {certificate.map((x, i) => (
+                    <tr key={i}>
                         <td>{x.name}</td>
                         <td>{x.issuer}</td>
                         <td>{x.date}</td>
