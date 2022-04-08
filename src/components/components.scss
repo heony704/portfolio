@@ -173,6 +173,10 @@ main {
         padding-bottom: 20px;
 
         button {
+            cursor: pointer;
+        }
+        
+        .unclick {
             padding: 5px 10px;
             // font-size: 1rem;
             border: 2.5px solid;
@@ -181,7 +185,17 @@ main {
             color: $skyblue;
             background-color: white;
         }
-        button:hover {
+        .unclick:hover {
+            border-color: $skyblue;
+            color: white;
+            background-color: $skyblue;
+        }
+
+        .clicked {
+            padding: 5px 10px;
+            // font-size: 1rem;
+            border: 2.5px solid;
+            border-radius: 1rem;
             border-color: $skyblue;
             color: white;
             background-color: $skyblue;
@@ -195,67 +209,6 @@ main {
             display: flex;
             justify-content: space-around;
             align-items: center;
-        }
-        .top >div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .clickarea {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .clickarea:hover {
-            .name {
-                color: grey;
-            }
-            .dot >div {
-                background-color: grey;
-                width: 10px;
-                height: 10px;
-            }
-        }
-
-        .name {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            // height: 10px;
-            width: 130px;
-        }
-
-        .dot {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            z-index: 1;
-
-            >div {
-                background-color: black;
-                margin: 5px;
-                width: 7px;
-                height: 7px;
-                border-radius: 100%;
-            }
-        }
-
-        .mark {
-            margin-top: 10px;
-            border-top: 0px solid transparent;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 20px solid #ececec;
-        }
-        .not {
-            visibility: hidden;
         }
 
         hr {
@@ -272,49 +225,131 @@ main {
     .contents {
         margin-top: 2px;
 
-        >div {
-            padding: 5%;
-            background: #ececec;
-            border-radius: 10px;
-        }
-
         >div + div {
             margin-top: 20px;
         }
+    }
+}
 
-        .date {
-            font-size: 1rem;
-            color: grey;
-            padding-left: 2px;
+// ProjectName.js
+.projectName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .clickarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 40px;
+            width: 130px;
         }
-
-        .tech {
-            margin-top: 10px;
-
-            p + p {
-                margin-left: 10px;
+        
+        .dot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+            
+            >div {
+                background-color: black;
+                margin: 5px;
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
             }
+        }
+        
+        .clicked {
             >p {
-                font-size: 1rem;
-                display: inline-block;
-                padding: 1px 8px;
-                background-color: lightgrey;
-                border-radius: 5px;
-                color: firebrick;
-                margin: 3px 0;
+                // color: grey;
+                font-size: 1.3rem;
             }
-        }
-
-        >div >h1 {
-            margin-top: 5px;
-        }
-        >div >h2 {
-            margin-top: 20px;
-            font-size: 1.4rem;
-        }
-        >div >p {
-            margin-top: 10px;
-            font-size: 1rem;
+            >div {
+                // background-color: grey;
+                width: 10px;
+                height: 10px;
+            }
         }
     }
+
+    .clickarea:hover {
+        .name {
+            color: grey;
+            font-size: 1.3rem;
+        }
+        .dot >div {
+            background-color: grey;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .mark {
+        margin-top: 10px;
+        border-top: 0px solid transparent;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid #ececec;
+        
+    }
+    .hidden {
+        visibility: hidden;
+    }
+}
+
+// ProjectContents.js
+.projectContents {
+    padding: 5%;
+    background: #ececec;
+    border-radius: 10px;
+
+    .date {
+        font-size: 1rem;
+        color: grey;
+        padding-left: 2px;
+    }
+
+    .tech {
+        margin-top: 10px;
+
+        p + p {
+            margin-left: 10px;
+        }
+        >p {
+            font-size: 1rem;
+            display: inline-block;
+            padding: 1px 8px;
+            background-color: lightgrey;
+            border-radius: 5px;
+            color: firebrick;
+            margin: 3px 0;
+        }
+    }
+
+    >h1 {
+        margin-top: 5px;
+    }
+    >h2 {
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+    >p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+}
+
+.none {
+    display: none;
 }

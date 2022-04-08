@@ -50,6 +50,7 @@ const data = {
     ],
     projects: [
         {
+            id: 1,
             name: 'SBOT',
             date: '2021.08 - 2021.09',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
@@ -60,12 +61,14 @@ const data = {
             }
         },
         {
+            id: 2,
             name: 'MAYO',
             date: '2021/10 - 2022/03',
             skills: ['React', 'JavaScript', 'styled-components'],
             summary: { title: 'test title', contents: 'test contents' }
         },
         {
+            id: 3,
             name: 'POFO',
             date: '2022/04 - 2022/04',
             skills: ['React', 'JavaScript', 'sass'],
