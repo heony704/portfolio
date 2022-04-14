@@ -1,12 +1,15 @@
 import './components.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-function ProjectName({ id, name, all, onVisible }) {
+function ProjectName({ id, name, allBtn }) {
     const [clicked, setClicked] = useState(false);
     const onClick = () => {
         setClicked(!clicked);
-        // onVisible(id, clicked);
     };
+
+    useEffect(() => {
+        setClicked(allBtn);
+    }, [allBtn]);
 
     return (
         <div className="projectName">

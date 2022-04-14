@@ -4,19 +4,17 @@ import ProjectName from './ProjectName';
 import ProjectContents from './ProjectContents';
 
 function Projects({ projects }) {
-    const [all, setAll] = useState(false);
+    const [allBtn, setAllBtn] = useState(false);
     const onClickAll = () => {
-        setAll(!all);
+        setAllBtn(!allBtn);
     };
-
-    const onVisible = (id) => {};
 
     return (
         <div className="projects">
             <div className="title">
                 <h2>PROJECTS</h2>
                 <button
-                    className={all ? 'clicked' : 'unclick'}
+                    className={allBtn ? 'clicked' : 'unclick'}
                     onClick={onClickAll}
                 >
                     ALL
@@ -29,8 +27,7 @@ function Projects({ projects }) {
                             key={project.id}
                             id={project.id}
                             name={project.name}
-                            all={all}
-                            onVisible={onVisible}
+                            allBtn={allBtn}
                         />
                     ))}
                 </div>
