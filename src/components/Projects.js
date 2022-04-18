@@ -26,12 +26,29 @@ function Projects({ projects }) {
     };
 
     useEffect(() => {
-        setVisibility(
-            visibility.map((project) => {
-                return { ...project, visibility: allBtn };
-            })
-        );
+        if (allBtn) {
+            setVisibility(
+                visibility.map((project) => {
+                    return { ...project, visibility: true };
+                })
+            );
+        } else if (!visibility.find((v) => !v.visibility)) {
+            setVisibility(
+                visibility.map((project) => {
+                    return { ...project, visibility: false };
+                })
+            );
+        }
     }, [allBtn]);
+
+    useEffect(() => {
+        if (visibility.find((v) => !v.visibility)) {
+            setAllBtn(false);
+        }
+        if (!allBtn && !visibility.find((v) => !v.visibility)) {
+            setAllBtn(true);
+        }
+    }, [visibility]);
 
     return (
         <div className="projects">
