@@ -1,8 +1,7 @@
 import './components.scss';
-import { useState } from 'react';
 
 function ProjectContents({ project }) {
-    const { id, date, name, skills, summary } = project;
+    const { date, name, skills, summary } = project;
 
     return (
         <div className="projectContents">
