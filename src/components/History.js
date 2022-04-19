@@ -8,12 +8,7 @@ function History({ history }) {
                 <tbody>
                     {history.map((x, i) => (
                         <tr key={i}>
-                            <td>
-                                {x.startYear}/
-                                {String(x.startMonth).padStart(2, '0')} ~{' '}
-                                {x.endYear}/
-                                {String(x.endMonth).padStart(2, '0')}
-                            </td>
+                            <td>{x.date}</td>
                             <td>{x.contents}</td>
                         </tr>
                     ))}

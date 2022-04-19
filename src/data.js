@@ -11,10 +11,7 @@ const data = {
     },
     history: [
         {
-            startYear: 2016,
-            startMonth: 3,
-            endYear: 2021,
-            endMonth: 8,
+            date: '2021/08',
             contents: '전북대학교 소프트웨어공학과 졸업'
         }
     ],
