@@ -51,6 +51,50 @@ const data = {
     projects: [
         {
             id: 1,
+            name: 'ARM Cortex-M3 틱택토',
+            date: '2018/03 ~ 2018/06',
+            skills: ['C', 'LPC1768', 'Cortec-M3'],
+            summary: {
+                title: 'ARM Cortex-M3의 LCD와 Keypad를 이용한 틱택토 게임',
+                contents: 'ARM Cortex-M3 구조 및 동작 방식 이해하기'
+            }
+        },
+        {
+            id: 2,
+            name: 'Seeing',
+            date: '2018/01 ~ 2018/11',
+            skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
+            summary: {}
+        },
+        {
+            id: 3,
+            name: '기계학습을 이용한 KOSPI 지수 변동성 예측',
+            date: '2020/03 ~ 2020/06',
+            skills: [
+                'Python',
+                'R',
+                'Scikit-learn',
+                'SVM',
+                'Decision Tree',
+                'Random Forest'
+            ],
+            summary: {}
+        },
+        {
+            id: 4,
+            name: 'Sprout',
+            date: '2020/03 ~ 2020/06',
+            skills: [
+                'Java',
+                'Maven',
+                'MySQL',
+                'Tomcat',
+                'Google Cloud Vision API'
+            ],
+            summary: {}
+        },
+        {
+            id: 5,
             name: 'SBOT',
             date: '2021.08 - 2021.09',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
@@ -61,14 +105,14 @@ const data = {
             }
         },
         {
-            id: 2,
+            id: 6,
             name: 'MAYO',
             date: '2021/10 - 2022/03',
             skills: ['React', 'JavaScript', 'styled-components'],
             summary: { title: 'test title', contents: 'test contents' }
         },
         {
-            id: 3,
+            id: 7,
             name: 'POFO',
             date: '2022/04 - 2022/04',
             skills: ['React', 'JavaScript', 'sass'],
