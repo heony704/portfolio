@@ -1,4 +1,4 @@
-import '../components.scss';
+import '../../styles/profile.scss';
 import { HiOutlineMail } from 'react-icons/hi';
 
 function Profile({ selfSrc, name, job }) {
@@ -13,7 +13,7 @@ function Profile({ selfSrc, name, job }) {
                 </div>
             </div>
 
-            <div className="contact">
+            <div className="contactBtn">
                 <HiOutlineMail />
             </div>
         </div>

@@ -1,13 +1,13 @@
-import './components.scss';
+import '../styles/header.scss';
 import { FiDownload } from 'react-icons/fi';
 
 function Header() {
     return (
         <header>
-            <div className="header">
-                <div className="contents">
-                    <p>HEONY's POFO</p>
-                    <div>
+            <div>
+                <div className="header">
+                    <p className="logo">HEONY's POFO</p>
+                    <div className="downloadBtn">
                         <FiDownload />
                     </div>
                 </div>

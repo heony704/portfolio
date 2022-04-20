@@ -1,0 +1,21 @@
+.portfolio {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    >div {
+        max-width: 900px;
+        width: 100%;
+        padding: 0 50px;
+
+        >div {
+            padding-top: 35px;
+
+            .title {
+                font-size: 1.2rem;
+                align-items: center;
+            }
+        }
+    }
+}

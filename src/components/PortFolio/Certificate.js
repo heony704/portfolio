@@ -1,9 +1,9 @@
-import '../components.scss';
+import '../../styles/certificate.scss';
 
 function Certificate({ certificate }) {
     return (
         <div className="certificate">
-            <h2>CERTIFICATE</h2>
+            <h1 className="title">CERTIFICATE</h1>
             <table>
                 <tbody>
                     {certificate.map((x, i) => (

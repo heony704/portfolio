@@ -1,9 +1,9 @@
-import '../components.scss';
+import '../../styles/history.scss';
 
 function History({ history }) {
     return (
         <div className="history">
-            <h2>HISTORY</h2>
+            <h1 className="title">HISTORY</h1>
             <table>
                 <tbody>
                     {history.map((x, i) => (

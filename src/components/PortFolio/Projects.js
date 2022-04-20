@@ -1,6 +1,6 @@
-import '../components.scss';
+import '../../styles/projects.scss';
 import { useEffect, useState } from 'react';
-import ProjectBox from './Projects/ProjectBox';
+import Project from './Projects/Project';
 
 function Projects({ projects }) {
     const idList = [];
@@ -51,8 +51,8 @@ function Projects({ projects }) {
 
     return (
         <div className="projects">
-            <div className="title">
-                <h2>PROJECTS</h2>
+            <div className="wrap-title">
+                <h1 className="title">PROJECTS</h1>
                 <button
                     className={allBtn ? 'clicked' : 'unclick'}
                     onClick={onClickAll}
@@ -67,7 +67,7 @@ function Projects({ projects }) {
                         .slice(0)
                         .reverse()
                         .map((project) => (
-                            <ProjectBox
+                            <Project
                                 key={project.id}
                                 project={project}
                                 clicked={

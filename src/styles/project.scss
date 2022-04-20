@@ -1,0 +1,82 @@
+.project {
+    >div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .clickarea {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+
+        .dot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+            
+            >div {
+                background-color: black;
+                margin: 5px;
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+            }
+        }
+
+        .name {
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-size: 1.3rem;
+                font-weight: normal;
+            }
+            p {
+                margin-left: 10px;
+                color: dimgray;
+                font-size: 1.1rem;
+            }
+        }
+
+        &:hover {
+            .dot >div {
+                background-color: grey;
+                width: 10px;
+                height: 10px;
+            }
+
+            .name {
+                color: grey;
+                h1 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .clicked {
+            >div {
+                width: 10px;
+                height: 10px;
+            }
+            >h1 {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .contents {
+        padding-left: 60px;
+        width: 100%;
+    }
+}

@@ -1,9 +1,9 @@
-import '../components.scss';
+import '../../styles/about.scss';
 
 function About({ title, contents }) {
     return (
         <div className="about">
-            <h2>{title}</h2>
+            <h1 className="title">{title}</h1>
             <p>{contents}</p>
         </div>
     );

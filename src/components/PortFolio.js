@@ -1,4 +1,4 @@
-import './components.scss';
+import '../styles/portfolio.scss';
 import Profile from './PortFolio/Profile';
 import About from './PortFolio/About';
 import History from './PortFolio/History';
@@ -11,8 +11,8 @@ function PortFolio({ portfolio }) {
         portfolio;
 
     return (
-        <main>
-            <div className="main">
+        <main className="portfolio">
+            <div>
                 <Profile
                     selfSrc={profile.self}
                     name={profile.name}

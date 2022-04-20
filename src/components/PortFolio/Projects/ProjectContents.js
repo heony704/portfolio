@@ -1,4 +1,4 @@
-import '../../components.scss';
+import '../../../styles/projectContents.scss';
 
 function ProjectContents({ project }) {
     const { date, skills, summary } = project;

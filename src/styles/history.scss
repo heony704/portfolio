@@ -1,0 +1,16 @@
+.history {
+    table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    td:first-child {
+        width: 37%;
+    }
+
+    td + td {
+        border-left: 2.5px solid lightgrey;
+    }
+}
