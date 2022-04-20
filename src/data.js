@@ -59,6 +59,7 @@ const data = {
         {
             id: 2,
             name: 'Seeing',
+            subname: '장애인주차구역 불법주차 자동신고 디바이스',
             date: '2018/01 ~ 2018/11',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
             summary: {}
@@ -80,6 +81,7 @@ const data = {
         {
             id: 4,
             name: 'Sprout',
+            subname: '식물에 대한 정보를 전달하는 다기능 웹사이트',
             date: '2020/03 ~ 2020/06',
             skills: [
                 'Java',
@@ -93,6 +95,7 @@ const data = {
         {
             id: 5,
             name: 'SBOT',
+            subname: '캠스터디를 위해 제작된 디스코드 봇',
             date: '2021.08 - 2021.09',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
             summary: {
@@ -103,14 +106,15 @@ const data = {
         },
         {
             id: 6,
-            name: 'MAYO',
+            name: 'SINK',
+            subname: '자신의 생각을 메모할 수 있는 웹사이트',
             date: '2021/10 - 2022/03',
             skills: ['React', 'JavaScript', 'styled-components'],
             summary: { title: 'test title', contents: 'test contents' }
         },
         {
             id: 7,
-            name: 'POFO',
+            name: '포트폴리오 웹사이트',
             date: '2022/04 - 2022/04',
             skills: ['React', 'JavaScript', 'sass'],
             summary: { title: 'test title', contents: 'test contents' }
