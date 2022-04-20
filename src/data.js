@@ -49,25 +49,22 @@ const data = {
         {
             id: 1,
             name: 'ARM Cortex-M3 틱택토',
-            date: '2018/03 ~ 2018/06',
+            date: '2018/03 - 2018/06',
             skills: ['C', 'LPC1768', 'Cortec-M3'],
-            summary: {
-                title: 'ARM Cortex-M3의 LCD와 Keypad를 이용한 틱택토 게임',
-                contents: 'ARM Cortex-M3 구조 및 동작 방식 이해하기'
-            }
+            summary: 'ARM Cortex-M3 구조 및 동작 방식 이해하기'
         },
         {
             id: 2,
             name: 'Seeing',
             subname: '장애인주차구역 불법주차 자동신고 디바이스',
-            date: '2018/01 ~ 2018/11',
+            date: '2018/01 - 2018/11',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
-            summary: {}
+            summary: ''
         },
         {
             id: 3,
             name: '기계학습을 이용한 KOSPI 지수 변동성 예측',
-            date: '2020/03 ~ 2020/06',
+            date: '2020/03 - 2020/06',
             skills: [
                 'Python',
                 'R',
@@ -76,13 +73,13 @@ const data = {
                 'Decision Tree',
                 'Random Forest'
             ],
-            summary: {}
+            summary: ''
         },
         {
             id: 4,
             name: 'Sprout',
             subname: '식물에 대한 정보를 전달하는 다기능 웹사이트',
-            date: '2020/03 ~ 2020/06',
+            date: '2020/03 - 2020/06',
             skills: [
                 'Java',
                 'Maven',
@@ -90,7 +87,7 @@ const data = {
                 'Tomcat',
                 'Google Cloud Vision API'
             ],
-            summary: {}
+            summary: ''
         },
         {
             id: 5,
@@ -98,11 +95,8 @@ const data = {
             subname: '캠스터디를 위해 제작된 디스코드 봇',
             date: '2021.08 - 2021.09',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
-            summary: {
-                title: '프로젝트 개요',
-                contents:
-                    '다들 나한테 말해 쉽지 않을 거래 원래 처음이 어려운 거야 Liar 내가 길잃은 날 이 선을 넘어가고 싶어 진짜 내 모습을 찾아서 Freedom 이제 고민하지 않을게 나를 믿을래 자유롭게 날아 저 위로 속박과 굴레에서 어깨 펴 마셔 윗공기 언젠가 한편의 시가 되어 그 위에 꽃피우길 아무리 난 돈을 쓸어 담아도 널 널 생각해 담아두지 다른 여자들 휙 감아도 난 널 생각하지'
-            }
+            summary:
+                '다들 나한테 말해 쉽지 않을 거래 원래 처음이 어려운 거야 Liar 내가 길잃은 날 이 선을 넘어가고 싶어 진짜 내 모습을 찾아서 Freedom 이제 고민하지 않을게 나를 믿을래 자유롭게 날아 저 위로 속박과 굴레에서 어깨 펴 마셔 윗공기 언젠가 한편의 시가 되어 그 위에 꽃피우길 아무리 난 돈을 쓸어 담아도 널 널 생각해 담아두지 다른 여자들 휙 감아도 난 널 생각하지'
         },
         {
             id: 6,
@@ -110,14 +104,14 @@ const data = {
             subname: '자신의 생각을 메모할 수 있는 웹사이트',
             date: '2021/10 - 2022/03',
             skills: ['React', 'JavaScript', 'styled-components'],
-            summary: { title: 'test title', contents: 'test contents' }
+            summary: 'test contents'
         },
         {
             id: 7,
             name: '포트폴리오 웹사이트',
             date: '2022/04 - 2022/04',
             skills: ['React', 'JavaScript', 'sass'],
-            summary: { title: 'test title', contents: 'test contents' }
+            summary: 'test contents'
         }
     ]
 };
