@@ -74,7 +74,7 @@ function Projects({ projects }) {
                                     visibility.find((v) => v.id === project.id)
                                         .visibility
                                 }
-                                onClick={onClickName}
+                                onClickFnc={onClickName}
                             />
                         ))}
                 </div>

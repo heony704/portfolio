@@ -1,7 +1,7 @@
 import './components.scss';
 import ProjectContents from './ProjectContents';
 
-function ProjectBox({ project, clicked, onClick }) {
+function ProjectBox({ project, clicked, onClickFnc }) {
     const { id, name, subname } = project;
 
     return (
@@ -10,7 +10,7 @@ function ProjectBox({ project, clicked, onClick }) {
                 <div
                     className="clickarea"
                     onClick={() => {
-                        onClick(id);
+                        onClickFnc(id);
                     }}
                 >
                     <div className={clicked ? 'dot clicked' : 'dot'}>

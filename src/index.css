@@ -1,8 +1,4 @@
-body,
-p,
-h1,
-h2,
-td {
+body, p, h1, h2, pre, td {
     margin: 0;
     padding: 0;
 }

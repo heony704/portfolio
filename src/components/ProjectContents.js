@@ -5,14 +5,13 @@ function ProjectContents({ project }) {
 
     return (
         <div className="projectContents">
-            <div className="date">{date}</div>
+            <p className="date">{date}</p>
             <div className="tech">
                 {skills.map((skill, i) => (
                     <p key={i}>{skill}</p>
                 ))}
             </div>
-            <h2>{summary.title}</h2>
-            <p>{summary.contents}</p>
+            <pre>{summary}</pre>
         </div>
     );
 }
