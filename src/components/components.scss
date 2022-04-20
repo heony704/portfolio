@@ -29,12 +29,20 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    p {
-        font-weight: bold;
-        font-size: 1.1rem;
-        user-select: none;
+        p {
+            font-weight: bold;
+            font-size: 1.1rem;
+            user-select: none;
+        }
+        div {
+            font-size: 1.5rem;
+            cursor: pointer;
+            
+        }
+        div:hover {
+            color: grey;
+        }
     }
 }
 

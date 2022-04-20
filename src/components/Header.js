@@ -1,4 +1,5 @@
 import './components.scss';
+import { FiDownload } from 'react-icons/fi';
 
 function Header() {
     return (
@@ -6,7 +7,9 @@ function Header() {
             <div className="header">
                 <div className="contents">
                     <p>HEONY's POFO</p>
-                    <p>button</p>
+                    <div>
+                        <FiDownload />
+                    </div>
                 </div>
             </div>
         </header>
