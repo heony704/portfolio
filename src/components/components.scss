@@ -200,91 +200,105 @@ main {
             background-color: $skyblue;
         }
     }
-    
+
     .timeline {
-        .top {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+        display: flex;
+        width: 100%;
 
-        hr {
+        .line {
+            background: linear-gradient(to bottom, #eee, #000 30px, #000 97%, #eee);
+            width: 2px;
+
             position: relative;
-            bottom: 51px;
-            background: linear-gradient(to right, #eee, #000 3%, #000 97%, #eee);
-            border: 0;
-            width: 100%;
-            height: 2px;
-            margin: 0;
+            left: 41px;
         }
-    }
 
-    .contents {
-        margin-top: 2px;
+        .projectList {
+            padding: 30px 0;
+            margin-left: 20px;
+            width: 100%;
 
-        >div + div {
-            margin-top: 20px;
+            >div + div {
+                margin-top: 30px;
+            }
         }
     }
 }
 
-// ProjectName.js
-.projectName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+// ProjectBox.js
+.projectBox {
+
+    >div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    >div + div {
+        margin-top: 20px;
+    }
 
     .clickarea {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        flex-direction: column;
         cursor: pointer;
 
         .name {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            text-align: center;
-            height: 40px;
-            width: 130px;
-        }
-        
-        .dot {
+            padding-left: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40px;
-            height: 40px;
-            z-index: 1;
-            
-            >div {
-                background-color: black;
-                margin: 5px;
-                width: 7px;
-                height: 7px;
-                border-radius: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 1.3rem;
+                font-weight: normal;
+            }
+            p {
+                margin-left: 10px;
+                color: dimgray;
+                font-size: 1.1rem;
             }
         }
-        
+
         .clicked {
-            >p {
-                // color: grey;
-                font-size: 1.3rem;
+            >h2 {
+                font-size: 1.6rem;
+                font-weight: bold;
             }
             >div {
-                // background-color: grey;
                 width: 10px;
                 height: 10px;
             }
         }
     }
 
+    .dot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        
+        >div {
+            background-color: black;
+            margin: 5px;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+        }
+    }
+
     .clickarea:hover {
         .name {
             color: grey;
-            font-size: 1.3rem;
+            h2 {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
         }
         .dot >div {
             background-color: grey;
@@ -293,16 +307,9 @@ main {
         }
     }
 
-    .mark {
-        margin-top: 10px;
-        border-top: 0px solid transparent;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-bottom: 20px solid #ececec;
-        
-    }
-    .hidden {
-        visibility: hidden;
+    .contents {
+        padding-left: 60px;
+        width: 100%;
     }
 }
 
@@ -311,6 +318,7 @@ main {
     padding: 5%;
     background: #ececec;
     border-radius: 10px;
+    width: 100%;
 
     animation: down 0.5s;
 

@@ -1,12 +1,11 @@
 import './components.scss';
 
 function ProjectContents({ project }) {
-    const { date, name, skills, summary } = project;
+    const { date, skills, summary } = project;
 
     return (
         <div className="projectContents">
             <div className="date">{date}</div>
-            <h1>{name}</h1>
             <div className="tech">
                 {skills.map((skill, i) => (
                     <p key={i}>{skill}</p>

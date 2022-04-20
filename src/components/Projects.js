@@ -1,7 +1,6 @@
 import './components.scss';
 import { useEffect, useState } from 'react';
-import ProjectName from './ProjectName';
-import ProjectContents from './ProjectContents';
+import ProjectBox from './ProjectBox';
 
 function Projects({ projects }) {
     const idList = [];
@@ -62,32 +61,23 @@ function Projects({ projects }) {
                 </button>
             </div>
             <div className="timeline">
-                <div className="top">
-                    {projects.map((project) => (
-                        <ProjectName
-                            key={project.id}
-                            id={project.id}
-                            name={project.name}
-                            clicked={
-                                visibility.find((v) => v.id === project.id)
-                                    .visibility
-                            }
-                            onClick={onClickName}
-                        />
-                    ))}
+                <div className="line" />
+                <div className="projectList">
+                    {projects
+                        .slice(0)
+                        .reverse()
+                        .map((project) => (
+                            <ProjectBox
+                                key={project.id}
+                                project={project}
+                                clicked={
+                                    visibility.find((v) => v.id === project.id)
+                                        .visibility
+                                }
+                                onClick={onClickName}
+                            />
+                        ))}
                 </div>
-                <hr />
-            </div>
-            <div className="contents">
-                {projects
-                    .filter(
-                        (project) =>
-                            visibility.find((v) => v.id === project.id)
-                                .visibility
-                    )
-                    .map((project) => (
-                        <ProjectContents key={project.id} project={project} />
-                    ))}
             </div>
         </div>
     );
