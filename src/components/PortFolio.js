@@ -1,14 +1,15 @@
 import './components.scss';
-import Profile from './Profile';
-import About from './About';
-import History from './History';
-import Skills from './Skills';
-import Certificate from './Certificate';
-import Projects from './Projects';
+import Profile from './PortFolio/Profile';
+import About from './PortFolio/About';
+import History from './PortFolio/History';
+import Skills from './PortFolio/Skills';
+import Certificate from './PortFolio/Certificate';
+import Projects from './PortFolio/Projects';
 
 function PortFolio({ portfolio }) {
     const { profile, about, history, skills, certificate, projects } =
         portfolio;
+
     return (
         <main>
             <div className="main">

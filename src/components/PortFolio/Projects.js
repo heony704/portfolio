@@ -1,6 +1,6 @@
-import './components.scss';
+import '../components.scss';
 import { useEffect, useState } from 'react';
-import ProjectBox from './ProjectBox';
+import ProjectBox from './Projects/ProjectBox';
 
 function Projects({ projects }) {
     const idList = [];

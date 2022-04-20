@@ -1,4 +1,4 @@
-import './components.scss';
+import '../components.scss';
 
 function Skills({ skills }) {
     return (

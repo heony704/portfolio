@@ -1,4 +1,4 @@
-import './components.scss';
+import '../components.scss';
 import { HiOutlineMail } from 'react-icons/hi';
 
 function Profile({ selfSrc, name, job }) {

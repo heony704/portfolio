@@ -1,4 +1,4 @@
-import './components.scss';
+import '../../components.scss';
 import ProjectContents from './ProjectContents';
 
 function ProjectBox({ project, clicked, onClickFnc }) {
