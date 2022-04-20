@@ -16,9 +16,14 @@ function ProjectBox({ project, clicked, onClickFnc }) {
                     <div className={clicked ? 'dot clicked' : 'dot'}>
                         <div />
                     </div>
+                    <div className={clicked ? 'pointer clicked' : 'pointer'}>
+                        <div />
+                    </div>
                     <div className={clicked ? 'name clicked' : 'name'}>
-                        <h1>{name}</h1>
-                        {subname && <p>{subname}</p>}
+                        <div>
+                            <h1>{name}</h1>
+                            {subname && <p>{subname}</p>}
+                        </div>
                     </div>
                 </div>
             </div>

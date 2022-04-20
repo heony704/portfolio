@@ -1,15 +1,19 @@
+@import './utils';
+
 .project {
     >div {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        // align-items: center;
         width: 100%;
     }
 
     .clickarea {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-end;
+        // align-items: center;
+        width: 100%;
         cursor: pointer;
 
         .dot {
@@ -27,23 +31,65 @@
                 height: 7px;
                 border-radius: 100%;
             }
+
+            &.clicked {
+                >div {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        .pointer {
+            margin-bottom: 5px;
+
+            border-top: 15px solid transparent;
+            border-left: 0px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 15px solid transparent;
+
+            transition: none;
+
+            &.clicked {
+                border-right-color: $project-box;
+                transition: all 0.5s ease-out;
+            }
         }
 
         .name {
-            padding-left: 20px;
+            padding: 30px 30px 10px 30px;
+            border-radius: 10px 10px 0 0;
+            
             display: flex;
-            justify-content: center;
             align-items: center;
-            text-align: center;
+            flex: 1;
 
-            h1 {
-                font-size: 1.3rem;
-                font-weight: normal;
+            transition: none;
+
+            >div {
+                display: flex;
+                align-items: center;
+                height: 1.6rem;
+
+                h1 {
+                    font-size: 1.3rem;
+                    font-weight: normal;
+                }
+                p {
+                    margin-left: 10px;
+                    color: dimgray;
+                    font-size: 1.1rem;
+                }
             }
-            p {
-                margin-left: 10px;
-                color: dimgray;
-                font-size: 1.1rem;
+
+            &.clicked {
+                background-color: $project-box;
+                transition: all 0.5s ease-out;
+
+                >div h1 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
             }
         }
 
@@ -54,23 +100,12 @@
                 height: 10px;
             }
 
-            .name {
+            .name >div {
                 color: grey;
                 h1 {
                     font-size: 1.6rem;
                     font-weight: bold;
                 }
-            }
-        }
-
-        .clicked {
-            >div {
-                width: 10px;
-                height: 10px;
-            }
-            >h1 {
-                font-size: 1.6rem;
-                font-weight: bold;
             }
         }
     }
