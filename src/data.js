@@ -50,6 +50,7 @@ const data = {
             id: 1,
             name: '⭕ ARM Cortex-M3 틱택토',
             date: '2018/03 - 2018/06',
+            personnel: '팀',
             skills: ['C', 'LPC1768', 'Cortec-M3'],
             summary:
                 'ARM Cortex-M3의 LCD에 표시된 화면을 보고 Keypad를 조작해서 진행하는 틱택토 게임입니다.\n\nLCD와 Keypad 입출력을 다루기 위해서 데이터시트와 소스코드를 토대로 프로세서의 구조를 분석했습니다. 프로세서가 어떻게 LCD와 Keypad를 조작하는지 알아내는 과정은 어려웠지만 이해한 후에는 프로그래밍이 어렵지 않고 즐거웠습니다. 구조와 동작원리에 대한 이해가 중요하다는 걸 알게 해준 프로젝트입니다.'
@@ -59,6 +60,7 @@ const data = {
             name: '👀 Seeing',
             subname: '장애인주차구역 불법주차 자동신고 디바이스',
             date: '2018/01 - 2018/11',
+            personnel: '팀',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
             summary:
                 '장애인전용주차구역에 불법으로 주‧정차한 자동차를 자동으로 신고하는 설치형 디바이스입니다. 라즈베리파이와 카메라, OpenCV를 이용해 자동차의 번호판을 인식하고 불법주차된 자동차의 번호판을 JavaScript, Node.js를 이용하여 개발한 웹사이트로 전송합니다.\n\n시장분석과 아키텍쳐 설계에 신경써 실제로 사용할 수 있는 프로젝트를 만들기 위해 노력했습니다. 처음으로 JavaScript와 프론트엔드를 겪어본 프로젝트입니다.'
@@ -68,6 +70,7 @@ const data = {
             name: '🌱 Sprout',
             subname: '식물에 대한 정보를 전달하는 다기능 웹사이트',
             date: '2020/03 - 2020/06',
+            personnel: '팀',
             skills: [
                 'Java',
                 'Maven',
@@ -83,6 +86,7 @@ const data = {
             name: '⏰ SBOT',
             subname: '캠스터디를 위해 제작된 디스코드 봇',
             date: '2021.08 - 2021.09',
+            personnel: '개인',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
             summary:
                 '디스코드로 캠스터디를 진행하던 중, 스터디원이 스터디 관련 기능이 있으면 좋겠다고 건의해서 만들게 된 디스코드 봇입니다. 스톱워치로 공부시간을 체크할 수 있고 체크한 시간을 바탕으로 하루동안 공부한 시간을 알려줍니다.\n\n오라클 클라우드 인프라(OCI)의 인스턴스에 서버를 켜 실제로 사용하면서 주기적으로 사용자의 피드백을 받아 기능을 개선했습니다. 타입 관련 오류를 줄이기 위해 TypeScript를 사용했습니다.'
@@ -92,6 +96,7 @@ const data = {
             name: '🌊 SINK',
             subname: '자신의 생각을 메모할 수 있는 웹사이트',
             date: '2021/10 - 2022/03',
+            personnel: '개인',
             skills: ['React', 'JavaScript', 'styled-components'],
             summary:
                 '메모를 작성, 수정, 삭제, 검색할 수 있는 웹사이트입니다. 아이디어를 간단히 작성하고 검색할 수 있는 웹사이트가 필요해서 직접 만들었습니다.\n\n처음 만든 React 프로젝트로, 해당 프로젝트를 통해 함수형 컴포넌트와 기본적인 Hooks 사용에 대해 익혔습니다. UX를 위해서 컴포넌트 동작을 부드럽게 만들었습니다.'
