@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: normal;
+
+    src: url('./NanumGothic-Regular.ttf') format('truetype'),
+    url('./NanumGothic-Regular.woff') format('woff'),
+    url('./NanumGothic-Regular.eot?#iefix') format('embedded-opentype')
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: bold;
+
+    src: url('./NanumGothic-Bold.ttf') format('truetype'),
+    url('./NanumGothic-Bold.woff') format('woff'),
+    url('./NanumGothic-Bold.eot?#iefix') format('embedded-opentype')
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 800;
+
+    src: url('./NanumGothic-ExtraBold.ttf') format('truetype'),
+    url('./NanumGothic-ExtraBold.woff') format('woff'),
+    url('./NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype')
+}
