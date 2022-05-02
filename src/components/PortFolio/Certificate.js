@@ -1,22 +1,18 @@
-import '../../styles/certificate.scss';
 import Title from './Title';
+import TableRow from './TableRow';
 
 function Certificate({ certificate }) {
     return (
         <div className="certificate">
-            {/* <h1 className="title">CERTIFICATE</h1> */}
             <Title title="CERTIFICATE" />
-            <table>
-                <tbody>
-                    {certificate.map((x, i) => (
-                        <tr key={i}>
-                            <td>{x.date}</td>
-                            <td>{x.name}</td>
-                            <td>{x.issuer}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            {certificate.map((x, i) => (
+                <TableRow
+                    key={i}
+                    date={x.date}
+                    task={x.name}
+                    extra={x.issuer}
+                />
+            ))}
         </div>
     );
 }

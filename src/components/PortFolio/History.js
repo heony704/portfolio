@@ -1,20 +1,13 @@
-import '../../styles/history.scss';
 import Title from './Title';
+import TableRow from './TableRow';
 
 function History({ history }) {
     return (
         <div className="history">
             <Title title="HISTORY" />
-            <table>
-                <tbody>
-                    {history.map((x, i) => (
-                        <tr key={i}>
-                            <td>{x.date}</td>
-                            <td>{x.contents}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            {history.map((x, i) => (
+                <TableRow key={i} date={x.date} task={x.contents} />
+            ))}
         </div>
     );
 }
