@@ -3,7 +3,7 @@ import TableRow from './TableRow';
 
 function History({ history }) {
     return (
-        <div className="history">
+        <div>
             <Title title="HISTORY" />
             {history.map((x, i) => (
                 <TableRow key={i} date={x.date} task={x.contents} />
