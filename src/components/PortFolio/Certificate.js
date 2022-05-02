@@ -3,7 +3,7 @@ import TableRow from './TableRow';
 
 function Certificate({ certificate }) {
     return (
-        <div className="certificate">
+        <div>
             <Title title="CERTIFICATE" />
             {certificate.map((x, i) => (
                 <TableRow
