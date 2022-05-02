@@ -1,0 +1,28 @@
+.portfolio {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    >div {
+        max-width: 1050px;
+        width: 100%;
+        padding: 0 50px;
+
+        >div {
+            padding-top: 50px;
+        }
+    } 
+
+    .bind {
+        display: flex;
+
+        >div {
+            width: 100%;
+        }
+
+        >div + div {
+            margin-left: 40px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import './utils';
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .info {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 140px;
+            height: 140px;
+            user-select: none;
+        }
+        .name {
+            padding: 0 50px;
+            
+            h1 {
+                font-size: 2.3rem;
+                font-weight: normal;
+
+                white-space: pre-wrap;
+                padding-bottom: 15px;
+            }
+            p {
+                font-size: 1.5rem;
+                color: dimgray;
+
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .contactBtn {
+        display: flex;
+        font-size: 2.7rem;
+        color: $skyblue;
+        cursor: pointer;
+
+        &:hover {
+            color: $skyblue-light;
+        }
+    }
+}

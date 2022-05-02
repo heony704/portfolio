@@ -1,12 +1,15 @@
-import './components.scss';
+import '../styles/header.scss';
+import { BsDownload } from 'react-icons/bs';
 
 function Header() {
     return (
         <header>
-            <div className="header">
-                <div className="contents">
-                    <p>HEONY's POFO</p>
-                    <p>button</p>
+            <div>
+                <div className="header">
+                    <p className="logo">HEONY's POFO</p>
+                    <div className="downloadBtn">
+                        <BsDownload />
+                    </div>
                 </div>
             </div>
         </header>

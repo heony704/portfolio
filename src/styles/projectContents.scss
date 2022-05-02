@@ -1,0 +1,60 @@
+@import './utils';
+
+.projectContents {
+    padding: 20px 40px 45px 40px;
+    background: $project-box;
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+
+    animation: fadein 0.5s;
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .date {
+        margin-left: 2px;
+        font-size: 1.1rem;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .personnel {
+        margin-left: 20px;
+        font-size: 1.1rem;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .tech {
+        margin-top: 10px;
+
+        p + p {
+            margin-left: 10px;
+        }
+        >p {
+            font-size: 1.1rem;
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: lightgrey;
+            border-radius: 5px;
+            color: firebrick;
+            font-weight: bold;
+        }
+    }
+
+    pre {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        width: 100%;
+        white-space: pre-wrap;
+
+        font-family: inherit;
+        line-height: 150%;
+    }
+}

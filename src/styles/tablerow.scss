@@ -1,0 +1,26 @@
+@import './utils';
+
+.tablerow {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 5px;
+
+    .date {
+        margin-bottom: 8px;
+        
+        span {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 10px;
+            background: $project-box;
+            font-size: 1.2rem;
+            color: grey;
+            font-weight: bold;
+        }
+    }
+
+    .contents {
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,131 @@
+@import './utils';
+
+.project {
+    >div {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .clickarea {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        cursor: pointer;
+
+        padding-bottom: 45px;
+        transition: none;
+
+        &.clicked {
+            padding-bottom: 0;
+            transition: none;
+
+        }
+
+        .dot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+            
+            >div {
+                background-color: black;
+                margin: 5px;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+            }
+        }
+
+        .pointer {
+            border-top: 15px solid transparent;
+            border-left: 0px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 15px solid transparent;
+
+            transition: none;
+
+            &.clicked {
+                border-right-color: $project-box;
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .name {
+            padding: 45px 40px 0 40px;
+            border-radius: 25px 25px 0 0;
+            
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            transition: none;
+
+            >div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 2rem;
+
+                .icon {
+                    font-size: 1.2rem;
+                    padding-right: 10px;
+                    padding-bottom: 3px;
+                }
+
+                h1 {
+                    font-size: 1.7rem;
+                }
+                p {
+                    margin-left: 15px;
+                    color: dimgray;
+                    font-size: 1.3rem;
+                }
+            }
+
+            &.clicked {
+                background-color: $project-box;
+                transition: all 0.5s ease-out;
+
+                >div {
+                    .icon {
+                        font-size: 1.3rem;
+                        padding-bottom: 2px;
+                    }
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .dot >div {
+                background-color: grey;
+                width: 10px;
+                height: 10px;
+            }
+
+            .name >div {
+                color: grey;
+
+                .icon {
+                    opacity: 50%;
+                    font-size: 1.3rem;
+                    padding-bottom: 2px;
+                }
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .contents {
+        padding-left: 50px;
+        width: 100%;
+    }
+}

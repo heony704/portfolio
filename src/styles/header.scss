@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    box-shadow: 0 0 6px lightgrey;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+    >div {
+        max-width: 1300px;
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 1.4rem;
+        user-select: none;
+    }
+    
+    .downloadBtn {
+        font-size: 1.6rem;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            color: grey;
+        }
+    }
+}

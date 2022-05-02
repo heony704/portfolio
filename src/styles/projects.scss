@@ -1,0 +1,61 @@
+@import './utils';
+
+.projects {
+    .wrap-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+
+        button {
+            cursor: pointer;
+            user-select: none;
+            font-size: 1.3rem;
+
+            height: 100%;
+            padding: 5px 10px;
+            border: 2.5px solid;
+            border-radius: 1.3rem;
+            border-color: $skyblue;
+        }
+        
+        .unclick {
+            color: $skyblue;
+            background-color: white;
+
+            &:hover {
+                color: white;
+                background-color: $skyblue;
+            }
+        }
+        
+        .clicked {
+            color: white;
+            background-color: $skyblue;
+        }
+    }
+
+    .timeline {
+        display: flex;
+        width: 100%;
+
+        .line {
+            background: linear-gradient(to bottom, #eee, #000 40px, #000 97%, #eee);
+            width: 2px;
+
+            position: relative;
+            left: 61px;
+        }
+
+        .projectList {
+            padding-top: 20px;
+            padding-bottom: 60px;
+            margin: 0 45px;
+            width: 100%;
+
+            >div + div {
+                margin-top: 30px;
+            }
+        }
+    }
+}
