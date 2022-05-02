@@ -1,5 +1,5 @@
 import '../styles/header.scss';
-import { FiDownload } from 'react-icons/fi';
+import { BsDownload } from 'react-icons/bs';
 
 function Header() {
     return (
@@ -8,7 +8,7 @@ function Header() {
                 <div className="header">
                     <p className="logo">HEONY's POFO</p>
                     <div className="downloadBtn">
-                        <FiDownload />
+                        <BsDownload />
                     </div>
                 </div>
             </div>

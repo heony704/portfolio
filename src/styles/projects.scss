@@ -4,33 +4,32 @@
     .wrap-title {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 20px;
+        align-items: center;
+        padding-bottom: 30px;
 
         button {
             cursor: pointer;
             user-select: none;
+            font-size: 1.3rem;
+
+            height: 100%;
+            padding: 5px 10px;
+            border: 2.5px solid;
+            border-radius: 1.3rem;
+            border-color: $skyblue;
         }
         
         .unclick {
-            padding: 5px 10px;
-            border: 2.5px solid;
-            border-radius: 1rem;
-            border-color: $skyblue;
             color: $skyblue;
             background-color: white;
 
             &:hover {
-                border-color: $skyblue;
                 color: white;
                 background-color: $skyblue;
             }
         }
         
         .clicked {
-            padding: 5px 10px;
-            border: 2.5px solid;
-            border-radius: 1rem;
-            border-color: $skyblue;
             color: white;
             background-color: $skyblue;
         }
@@ -41,18 +40,17 @@
         width: 100%;
 
         .line {
-            background: linear-gradient(to bottom, #eee, #000 30px, #000 97%, #eee);
+            background: linear-gradient(to bottom, #eee, #000 40px, #000 97%, #eee);
             width: 2px;
 
             position: relative;
-            left: 41px;
+            left: 61px;
         }
 
         .projectList {
             padding-top: 20px;
-            padding-bottom: 40px;
-            margin-left: 20px;
-            margin-right: 20px;
+            padding-bottom: 60px;
+            margin: 0 45px;
             width: 100%;
 
             >div + div {

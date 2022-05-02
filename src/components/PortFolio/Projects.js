@@ -1,6 +1,7 @@
 import '../../styles/projects.scss';
 import { useEffect, useState } from 'react';
 import Project from './Projects/Project';
+import Title from './Title';
 
 function Projects({ projects }) {
     const idList = [];
@@ -52,7 +53,7 @@ function Projects({ projects }) {
     return (
         <div className="projects">
             <div className="wrap-title">
-                <h1 className="title">PROJECTS</h1>
+                <Title title="PROJECTS" />
                 <button
                     className={allBtn ? 'clicked' : 'unclick'}
                     onClick={onClickAll}

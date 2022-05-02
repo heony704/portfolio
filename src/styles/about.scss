@@ -1,5 +1,21 @@
+@import './utils.scss';
+
 .about {
     .title {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+    }
+
+    pre {
+        // background-color: #E3F2F9;
+        // padding: 30px 40px;
+        // border-radius: 40px;
+        // border: 2px $skyblue-light solid;
+
+        // width: 100%;
+        white-space: pre-wrap;
+        
+        font-family: inherit;
+        font-size: 1.3rem;
+        line-height: 170%;
     }
 }

@@ -19,9 +19,11 @@ function PortFolio({ portfolio }) {
                     job={profile.job}
                 />
                 <About title={about.title} contents={about.contents} />
-                <History history={history} />
                 <Skills skills={skills} />
-                <Certificate certificate={certificate} />
+                <div className="bind">
+                    <History history={history} />
+                    <Certificate certificate={certificate} />
+                </div>
                 <Projects projects={projects} />
             </div>
         </main>

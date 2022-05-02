@@ -1,5 +1,5 @@
 import '../../styles/profile.scss';
-import { HiOutlineMail } from 'react-icons/hi';
+import { IoMailOutline } from 'react-icons/io5';
 
 function Profile({ selfSrc, name, job }) {
     return (
@@ -14,7 +14,7 @@ function Profile({ selfSrc, name, job }) {
             </div>
 
             <div className="contactBtn">
-                <HiOutlineMail />
+                <IoMailOutline />
             </div>
         </div>
     );

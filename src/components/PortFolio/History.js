@@ -1,9 +1,10 @@
 import '../../styles/history.scss';
+import Title from './Title';
 
 function History({ history }) {
     return (
         <div className="history">
-            <h1 className="title">HISTORY</h1>
+            <Title title="HISTORY" />
             <table>
                 <tbody>
                     {history.map((x, i) => (

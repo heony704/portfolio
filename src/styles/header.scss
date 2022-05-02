@@ -18,20 +18,22 @@ header {
 }
 
 .header {
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .logo {
-        font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         user-select: none;
     }
     
     .downloadBtn {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         cursor: pointer;
+
+        display: flex;
+        justify-content: center;
 
         &:hover {
             color: grey;

@@ -10,7 +10,6 @@ div, h1, h2, h3, p, button {
 body {
     overflow-y: scroll;
     font-family: 'NanumGothic';
-    line-height: 170%;
 }
 
 div {
