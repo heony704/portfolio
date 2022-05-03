@@ -103,8 +103,22 @@ const data = {
             date: '2021/10 - 2022/03',
             personnel: '개인',
             skills: ['React', 'JavaScript', 'styled-components'],
+            images: [
+                {
+                    name: 'JavaScript',
+                    src: 'https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black'
+                },
+                {
+                    name: 'React',
+                    src: 'https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black'
+                },
+                {
+                    name: 'TypeScript',
+                    src: 'https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white'
+                }
+            ],
             summary:
-                '메모를 작성, 수정, 삭제, 검색할 수 있는 웹사이트입니다. 아이디어를 간단히 작성하고 검색할 수 있는 웹사이트가 필요해서 직접 만들었습니다.\n\n처음 만든 React 프로젝트로, 해당 프로젝트를 통해 함수형 컴포넌트와 기본적인 Hooks 사용에 대해 익혔습니다. UX를 위해서 컴포넌트 동작을 부드럽게 만들었습니다.'
+                '메모를 작성, 수정, 삭제, 검색할 수 있는 웹사이트입니다. 아이디어를 간단히 작성하고 검색할 수 있는 웹사이트가 필요해서 직접 만들었습니다.\n\n처음 만든 React 프로젝트로, 해당 프로젝트를 통해 함수형 컴포넌트와 기본적인 Hooks 사용을 익혔습니다. UX를 위해서 컴포넌트 동작을 부드럽게 만들었습니다.'
         }
         // {
         //     id: 6,
