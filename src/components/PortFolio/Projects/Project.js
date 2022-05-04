@@ -14,10 +14,10 @@ function ProjectBox({ project, clicked, onClickFnc }) {
                     }}
                 >
                     <div className={clicked ? 'dot clicked' : 'dot'}>
-                        <div />
+                        <div></div>
                     </div>
                     <div className={clicked ? 'pointer clicked' : 'pointer'}>
-                        <div />
+                        <div></div>
                     </div>
                     <div className={clicked ? 'name clicked' : 'name'}>
                         <div>

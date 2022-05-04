@@ -6,7 +6,7 @@
     border-radius: 0 0 25px 25px;
     width: 100%;
 
-    animation: fadein 0.5s;
+    animation: fadein 0.5s ease-out;
 
     @keyframes fadein {
         0% {
@@ -46,6 +46,12 @@
             color: firebrick;
             font-weight: bold;
         }
+    }
+
+    .imgs {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
     }
 
     pre {

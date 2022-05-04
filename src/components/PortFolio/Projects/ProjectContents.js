@@ -1,7 +1,8 @@
 import '../../../styles/projectContents.scss';
+import Carousel from './Carousel';
 
 function ProjectContents({ project }) {
-    const { date, personnel, skills, summary } = project;
+    const { date, personnel, skills, images, summary } = project;
 
     return (
         <div className="projectContents">
@@ -12,6 +13,11 @@ function ProjectContents({ project }) {
                     <p key={i}>{skill}</p>
                 ))}
             </div>
+            {images && (
+                <div className="imgs">
+                    <Carousel images={images} />
+                </div>
+            )}
             <pre>{summary}</pre>
         </div>
     );
