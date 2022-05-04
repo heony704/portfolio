@@ -3,7 +3,7 @@
 .tablerow {
     width: 100%;
     margin-bottom: 15px;
-    padding-left: 5px;
+    padding-left: 2px;
 
     .date {
         margin-bottom: 8px;
@@ -13,9 +13,8 @@
             padding: 4px 10px;
             border-radius: 10px;
             background: $project-box;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: grey;
-            font-weight: bold;
         }
     }
 

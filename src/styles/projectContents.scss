@@ -1,7 +1,7 @@
 @import './utils';
 
 .projectContents {
-    padding: 20px 40px 45px 40px;
+    padding: 10px 40px 45px 40px;
     background: $project-box;
     border-radius: 0 0 25px 25px;
     width: 100%;
@@ -21,14 +21,14 @@
         margin-left: 2px;
         font-size: 1.1rem;
         color: grey;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     .personnel {
-        margin-left: 20px;
+        margin-left: 25px;
         font-size: 1.1rem;
         color: grey;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     .tech {
@@ -44,7 +44,7 @@
             background-color: lightgrey;
             border-radius: 5px;
             color: firebrick;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 
@@ -56,11 +56,27 @@
 
     pre {
         margin-top: 30px;
+        padding: 0 10px;
         font-size: 1.2rem;
-        width: 100%;
         white-space: pre-wrap;
 
         font-family: inherit;
         line-height: 150%;
+    }
+
+    .url {
+        margin-top: 20px;
+        padding: 0 10px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        >.name {
+            background-color: gray;
+            color: whitesmoke;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
     }
 }
