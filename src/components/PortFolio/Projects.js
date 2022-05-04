@@ -62,7 +62,7 @@ function Projects({ projects }) {
                 </button>
             </div>
             <div className="timeline">
-                <div className="line" />
+                <div className="line"></div>
                 <div className="projectList">
                     {projects
                         .slice(0)

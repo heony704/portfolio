@@ -15,29 +15,31 @@
             cursor: pointer;
             font-size: 3.3rem;
             color: gray;
+            padding: 0 10px;
         }
 
         .slide {
             overflow: hidden;
 
-            height: 250px;
-            width: 400px;
+            height: 270px;
+            width: 420px;
 
-            .img {
+            .imgwrap {
                 display: flex;
 
-                >img {
-                    height: 250px;
-                    width: 400px;
-
+                .img {
+                    height: 270px;
+                    width: 420px;
+                    background-position: 50% 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    flex: none;
                 }
             }
         }
     }
 
     .position {
-        // background-color: aqua;
-        // width: 100%;
         margin-top: 15px;
 
         display: flex;

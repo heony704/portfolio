@@ -6,7 +6,7 @@ import { IoChevronForwardOutline } from 'react-icons/io5';
 function Carousel({ images }) {
     const [current, setCurrent] = useState(0);
     const [style, setStyle] = useState({
-        transform: `translate(-${current}00%)`
+        marginLeft: `-${current}00%`
     });
     const imgSize = useRef(images.length);
 
@@ -20,7 +20,7 @@ function Carousel({ images }) {
     };
 
     useEffect(() => {
-        setStyle({ transform: `translate(-${current}00%)` });
+        setStyle({ marginLeft: `-${current}00%` });
     }, [current]);
 
     return (
@@ -35,9 +35,13 @@ function Carousel({ images }) {
                     <IoIosArrowBack />
                 </div>
                 <div className="slide">
-                    <div className="img" style={style}>
+                    <div className="imgwrap" style={style}>
                         {images.map((img, i) => (
-                            <img key={i} src={img.src} alt={img.name} />
+                            <div
+                                key={i}
+                                className="img"
+                                style={{ backgroundImage: `url(${img.src})` }}
+                            ></div>
                         ))}
                     </div>
                 </div>
@@ -52,7 +56,10 @@ function Carousel({ images }) {
             </div>
             <div className="position">
                 {images.map((x, i) => (
-                    <div key={i} className={i === current && 'current'} />
+                    <div
+                        key={i}
+                        className={i === current ? 'current' : undefined}
+                    ></div>
                 ))}
             </div>
         </div>
