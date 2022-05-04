@@ -55,11 +55,9 @@ const data = {
             skills: ['C', 'LPC1768', 'Cortec-M3'],
             images: [
                 {
-                    name: 'tictactoe_play',
                     src: 'https://user-images.githubusercontent.com/36994104/166555430-5fcf9da7-d9db-4a76-a828-15eddffb9d6f.gif'
                 },
                 {
-                    name: 'tictactoe_algorithm',
                     src: 'https://user-images.githubusercontent.com/36994104/166544398-7f3e3975-8a17-4ea1-b429-4a2d71b55222.png'
                 }
             ],
@@ -76,15 +74,12 @@ const data = {
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
             images: [
                 {
-                    name: 'seeing_back',
                     src: 'https://user-images.githubusercontent.com/36994104/166536772-40216c6c-c257-4c4b-8d08-ba3491e58508.png'
                 },
                 {
-                    name: 'seeing_front',
                     src: 'https://user-images.githubusercontent.com/36994104/166536815-7b454233-ea78-49ae-b684-8d6313e071a8.png'
                 },
                 {
-                    name: 'seeing_architecture',
                     src: 'https://user-images.githubusercontent.com/36994104/166536757-26d5991f-fe4a-43ab-9a5d-e875cc146096.png'
                 }
             ],
@@ -107,15 +102,12 @@ const data = {
             ],
             images: [
                 {
-                    name: 'sprout_main',
                     src: 'https://user-images.githubusercontent.com/36994104/166536845-ded83f0a-faa6-4238-a9de-15988f0c5f5d.png'
                 },
                 {
-                    name: 'sprout_play1',
                     src: 'https://user-images.githubusercontent.com/36994104/166536699-e2081a12-eb27-4956-bb3a-22a61bf15de9.png'
                 },
                 {
-                    name: 'sprout_play2',
                     src: 'https://user-images.githubusercontent.com/36994104/166536844-89c4e078-0a07-4557-b73a-f78a324db03b.png'
                 }
             ],
@@ -132,11 +124,9 @@ const data = {
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
             images: [
                 {
-                    name: 'sbot_play1',
                     src: 'https://user-images.githubusercontent.com/36994104/134497720-fc7d7243-a450-4ecb-8abd-c8351cfb07a0.gif'
                 },
                 {
-                    name: 'sbot_play2',
                     src: 'https://user-images.githubusercontent.com/36994104/134697984-a5823575-0121-4114-9e71-aca2d311637a.gif'
                 }
             ],
