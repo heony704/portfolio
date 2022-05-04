@@ -2,7 +2,7 @@ import '../../../styles/projectContents.scss';
 import Carousel from './Carousel';
 
 function ProjectContents({ project }) {
-    const { date, personnel, skills, images, summary } = project;
+    const { date, personnel, skills, images, summary, url, awards } = project;
 
     return (
         <div className="projectContents">
@@ -19,6 +19,14 @@ function ProjectContents({ project }) {
                 </div>
             )}
             <pre>{summary}</pre>
+            {url &&
+                url.map((u, i) => (
+                    <div className="url" key={i}>
+                        <p className="name">{u.name}</p>
+                        <p>{u.src}</p>
+                    </div>
+                ))}
+            {awards && <div className="awards"></div>}
         </div>
     );
 }

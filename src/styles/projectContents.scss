@@ -63,4 +63,20 @@
         font-family: inherit;
         line-height: 150%;
     }
+
+    .url {
+        margin-top: 20px;
+        padding: 0 10px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        >.name {
+            background-color: gray;
+            color: whitesmoke;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    }
 }
