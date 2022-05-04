@@ -7,7 +7,7 @@ function ProjectContents({ project }) {
     return (
         <div className="projectContents">
             <span className="date">{date}</span>
-            <span className="personnel">[ {personnel} 프로젝트 ]</span>
+            <span className="personnel">{personnel} 프로젝트</span>
             <div className="tech">
                 {skills.map((skill, i) => (
                     <p key={i}>{skill}</p>
