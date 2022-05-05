@@ -1,0 +1,34 @@
+.url {
+    display: flex;
+    align-items: center;
+
+    >p {
+        background-color: gray;
+        color: whitesmoke;
+        padding: 3px 6px;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    >a {
+        color: Forestgreen;
+        font-size: 1.1rem;
+        margin-left: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            color: limegreen;
+        }
+
+        >svg {
+            padding-left: 3px;
+            font-size: 1.2rem;
+        }
+    }
+
+    & + & {
+        margin-top: 10px;
+    }
+}
