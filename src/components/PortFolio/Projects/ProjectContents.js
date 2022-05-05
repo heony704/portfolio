@@ -1,7 +1,6 @@
 import '../../../styles/projectContents.scss';
 import Carousel from './Carousel';
-import Url from './Url';
-import Awards from './Awards';
+import ExtraInfo from './ExtraInfo';
 
 function ProjectContents({ project }) {
     const { date, personnel, skills, images, summary, url, awards } = project;
@@ -21,14 +20,9 @@ function ProjectContents({ project }) {
                 </div>
             )}
             <pre>{summary}</pre>
-            {url && (
-                <div className="urlwrap">
-                    <Url url={url} />
-                </div>
-            )}
-            {awards && (
-                <div className="awardswrap">
-                    <Awards awards={awards} />
+            {(url || awards) && (
+                <div className="extrawrap">
+                    <ExtraInfo url={url} awards={awards} />
                 </div>
             )}
         </div>

@@ -3,11 +3,13 @@
     align-items: center;
 
     >p {
-        background-color: gray;
-        color: whitesmoke;
-        padding: 3px 6px;
-        border-radius: 6px;
-        font-size: 1rem;
+        // background-color: gray;
+        // color: whitesmoke;
+        // padding: 3px 6px;
+        // border-radius: 6px;
+        // font-size: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 
     >a {
@@ -23,12 +25,12 @@
         }
 
         >svg {
-            padding-left: 3px;
+            padding-left: 4px;
             font-size: 1.2rem;
         }
     }
 
     & + & {
-        margin-top: 10px;
+        margin-top: 7px;
     }
 }

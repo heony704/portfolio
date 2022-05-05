@@ -6,7 +6,7 @@ function Url({ url }) {
         <>
             {url.map((u, i) => (
                 <div className="url" key={i}>
-                    <p className="urlname">{u.name}</p>
+                    <p>{u.name}</p>
                     <a href={u.src} target="_blank" rel="noreferrer">
                         {u.src}
                         <FiExternalLink />
