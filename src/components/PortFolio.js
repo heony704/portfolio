@@ -13,11 +13,7 @@ function PortFolio({ portfolio }) {
     return (
         <main className="portfolio">
             <div>
-                <Profile
-                    selfSrc={profile.self}
-                    name={profile.name}
-                    job={profile.job}
-                />
+                <Profile profile={profile} />
                 <About title={about.title} contents={about.contents} />
                 <Skills skills={skills} />
                 <div className="bind">

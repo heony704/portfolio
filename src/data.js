@@ -2,7 +2,10 @@ const data = {
     profile: {
         self: '/images/self.png',
         name: '이승헌  |  Seungheon Lee',
-        job: 'Front-End Programmer'
+        job: 'Front-End Programmer',
+        email: 'lsheony704@gmail.com',
+        github: 'github.com/SeungHe0n',
+        velog: 'velog.io/@heony'
     },
     about: {
         // title: '사용자처럼 생각하는 개발자',
