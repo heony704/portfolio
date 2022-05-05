@@ -1,6 +1,7 @@
 import '../../../styles/projectContents.scss';
 import Carousel from './Carousel';
 import Url from './Url';
+import Awards from './Awards';
 
 function ProjectContents({ project }) {
     const { date, personnel, skills, images, summary, url, awards } = project;
@@ -25,7 +26,11 @@ function ProjectContents({ project }) {
                     <Url url={url} />
                 </div>
             )}
-            {awards && <div className="awards"></div>}
+            {awards && (
+                <div className="awardswrap">
+                    <Awards awards={awards} />
+                </div>
+            )}
         </div>
     );
 }
