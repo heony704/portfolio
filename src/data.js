@@ -2,7 +2,10 @@ const data = {
     profile: {
         self: '/images/self.png',
         name: '이승헌  |  Seungheon Lee',
-        job: 'Front-End Programmer'
+        job: 'Front-End Programmer',
+        email: 'lsheony704@gmail.com',
+        github: 'github.com/SeungHe0n',
+        velog: 'velog.io/@heony'
     },
     about: {
         // title: '사용자처럼 생각하는 개발자',
@@ -87,7 +90,7 @@ const data = {
                 '장애인전용주차구역에 불법으로 주‧정차한 자동차를 자동으로 신고하는 설치형 디바이스입니다. 라즈베리파이와 카메라, OpenCV를 이용해 자동차의 번호판을 인식하고 불법주차된 자동차의 번호판을 JavaScript, Node.js를 이용하여 개발한 웹사이트로 전송합니다.\n\n시장분석과 아키텍쳐 설계에 신경써 실제로 사용할 수 있는 프로젝트를 만들기 위해 노력했습니다. 처음으로 JavaScript와 프론트엔드를 겪어본 프로젝트입니다.',
             url: [
                 {
-                    name: 'youtube',
+                    name: 'YOUTUBE',
                     src: 'https://www.youtube.com/watch?v=7wQER_xu_Vc'
                 }
             ],
@@ -155,7 +158,7 @@ const data = {
             ],
             summary:
                 '디스코드로 캠스터디를 진행하던 중, 스터디원이 스터디 관련 기능이 있으면 좋겠다고 건의해서 만들게 된 디스코드 봇입니다. 스톱워치로 공부시간을 체크할 수 있고 체크한 시간을 바탕으로 하루동안 공부한 시간을 알려줍니다.\n\n오라클 클라우드 인프라(OCI)의 인스턴스에 서버를 켜 실제로 사용하면서 주기적으로 사용자의 피드백을 받아 기능을 개선했습니다. 타입 관련 오류를 줄이기 위해 TypeScript를 사용했습니다.',
-            url: [{ name: 'github', src: 'https://github.com/SeungHe0n/SBOT' }]
+            url: [{ name: 'GITHUB', src: 'https://github.com/SeungHe0n/SBOT' }]
         },
         {
             id: 5,
@@ -168,8 +171,8 @@ const data = {
             summary:
                 '메모를 작성, 수정, 삭제, 검색할 수 있는 웹사이트입니다. 아이디어를 간단히 작성하고 검색할 수 있는 웹사이트가 필요해서 직접 만들었습니다.\n\n처음 만든 React 프로젝트로, 해당 프로젝트를 통해 함수형 컴포넌트와 기본적인 Hooks 사용을 익혔습니다. UX를 위해서 컴포넌트 동작을 부드럽게 만들었습니다.',
             url: [
-                { name: 'github', src: 'https://github.com/SeungHe0n/sink' },
-                { name: 'url', src: 'https://seunghe0n.github.io/sink/' }
+                { name: 'GITHUB', src: 'https://github.com/SeungHe0n/sink' },
+                { name: 'URL', src: 'https://seunghe0n.github.io/sink/' }
             ]
         }
         // ,{

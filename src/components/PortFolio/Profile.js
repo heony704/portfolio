@@ -1,11 +1,13 @@
 import '../../styles/profile.scss';
-import { IoMailOutline } from 'react-icons/io5';
+import Contact from './Contact';
 
-function Profile({ selfSrc, name, job }) {
+function Profile({ profile }) {
+    const { self, name, job, email, github, velog, tel } = profile;
+
     return (
         <div className="profile">
             <div className="info">
-                <img src={process.env.PUBLIC_URL + selfSrc} alt="self" />
+                <img src={process.env.PUBLIC_URL + self} alt="self" />
 
                 <div className="name">
                     <h1>{name}</h1>
@@ -13,9 +15,7 @@ function Profile({ selfSrc, name, job }) {
                 </div>
             </div>
 
-            <div className="contactBtn">
-                <IoMailOutline />
-            </div>
+            <Contact email={email} github={github} velog={velog} tel={tel} />
         </div>
     );
 }

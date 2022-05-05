@@ -1,10 +1,6 @@
-body, p, h1, h2, pre, td {
+body, p, h1, h2, pre, a {
     margin: 0;
     padding: 0;
-}
-
-div, h1, h2, h3, p, button {
-    transition: all 0.2s ease-out;
 }
 
 body {

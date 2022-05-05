@@ -1,0 +1,38 @@
+@import 'utils.scss';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        
+        p {
+            margin-left: 6px;
+            transition: all 0.2s ease-out;
+        }
+        
+        &:hover p {
+            color: dimgray;
+        }
+
+        &.email svg {
+            color: $skyblue;
+        }
+        &.github svg {
+            color: #24292F;
+        }
+        &.velog svg {
+            color: #1FC896;
+        }
+    }
+    a + a {
+        margin-top: 8px;
+    }
+}

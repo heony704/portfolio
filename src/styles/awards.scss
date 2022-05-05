@@ -1,0 +1,28 @@
+.awards {
+    display: flex;
+
+    .awardstitle {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .awardsname {
+        margin-left: 10px;
+    }
+
+    .award {
+        display: flex;
+
+        >p {
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        >.name {
+            margin-left: 5px;
+        }
+    }
+    .award + .award {
+        margin-top: 3px;
+    }
+}

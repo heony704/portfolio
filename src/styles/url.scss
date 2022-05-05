@@ -1,0 +1,32 @@
+.url {
+    display: flex;
+    align-items: center;
+
+    >p {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    >a {
+        color: Forestgreen;
+        font-size: 1.1rem;
+        margin-left: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            color: limegreen;
+        }
+
+        >svg {
+            padding-left: 4px;
+            font-size: 1.2rem;
+        }
+    }
+
+    & + & {
+        margin-top: 7px;
+    }
+}
