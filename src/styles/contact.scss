@@ -13,12 +13,13 @@
         text-decoration: none;
         color: black;
         
-        &:hover p {
-            color: dimgray;
-        }
-
         p {
             margin-left: 6px;
+            transition: all 0.2s ease-out;
+        }
+        
+        &:hover p {
+            color: dimgray;
         }
 
         &.email svg {
