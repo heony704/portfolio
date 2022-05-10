@@ -2,11 +2,15 @@ import '../../../styles/projectContents.scss';
 import Carousel from './Carousel';
 import ExtraInfo from './ExtraInfo';
 
-function ProjectContents({ project }) {
+function ProjectContents({ project, hasSubname }) {
     const { date, personnel, skills, images, summary, url, awards } = project;
 
     return (
-        <div className="projectContents">
+        <div
+            className={
+                hasSubname ? 'projectContents hassubname' : 'projectContents'
+            }
+        >
             <span className="date">{date}</span>
             <span className="personnel">{personnel} 프로젝트</span>
             <div className="tech">
@@ -16,7 +20,7 @@ function ProjectContents({ project }) {
             </div>
             {images && (
                 <div className="carouselwrap">
-                    <Carousel images={images} />
+                    {/* <Carousel images={images} /> */}
                 </div>
             )}
             <pre>{summary}</pre>

@@ -91,7 +91,7 @@ const data = {
             url: [
                 {
                     name: 'YOUTUBE',
-                    src: 'https://www.youtube.com/watch?v=7wQER_xu_Vc'
+                    src: 'https://youtu.be/7wQER_xu_Vc'
                 }
             ],
             awards: [

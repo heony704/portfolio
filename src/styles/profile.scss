@@ -3,20 +3,22 @@
 .profile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
+
+    img {
+        width: 140px;
+        height: 140px;
+        user-select: none;
+    }
 
     .info {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        flex: auto;
 
-        img {
-            width: 140px;
-            height: 140px;
-            user-select: none;
-        }
         .name {
-            padding: 0 50px;
+            padding: 0 40px;
             
             h1 {
                 font-size: 2.3rem;
@@ -30,6 +32,34 @@
                 color: dimgray;
 
                 padding-left: 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 948px) {
+        flex-direction: column;
+
+        .info {
+            width: 100%;
+            padding-top: 30px;
+            .name {
+                padding: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .info {
+            flex-direction: column;
+
+            >div + div {
+                padding-top: 25px;
+            }
+            .name {
+                text-align: center;
+                h1 {
+                    padding-bottom: 5px;
+                }
             }
         }
     }
