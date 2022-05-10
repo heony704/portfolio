@@ -1,9 +1,9 @@
 @import './utils';
 
 .projectContents {
-    padding: 10px 40px 45px 40px;
+    padding: 0.6rem 2.5rem 2.8rem 2.5rem;
     background: $project-box;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 1.5rem 1.5rem;
     width: 100%;
 
     animation: fadein 0.5s ease-out;
@@ -25,40 +25,40 @@
     }
 
     .personnel {
-        margin-left: 25px;
+        margin-left: 1rem;
         font-size: 1.1rem;
         color: grey;
         font-weight: 600;
     }
 
     .tech {
-        margin-top: 10px;
+        margin-top: 0.3rem;
         display: flex;
         flex-wrap: wrap;
 
         >p {
             font-size: 1.1rem;
             display: inline-block;
-            padding: 3px 8px;
+            padding: 0.2rem 0.5rem;
             background-color: lightgrey;
-            border-radius: 5px;
+            border-radius: 0.4rem;
             color: firebrick;
             font-weight: 600;
             
-            margin-right: 10px;
-            margin-top: 5px;
+            margin-right: 0.4rem;
+            margin-top: 0.2rem;
         }
     }
 
     .carouselwrap {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 1.8rem;
     }
 
     pre {
-        margin-top: 30px;
-        padding: 0 10px;
+        margin-top: 1.8rem;
+        padding: 0 0.6rem;
         font-size: 1.2rem;
         white-space: pre-wrap;
 
@@ -67,8 +67,8 @@
     }
 
     .extrawrap {
-        margin-top: 20px;
-        padding: 0 10px;
+        margin-top: 1.2rem;
+        padding: 0 0.6rem;
     }
 
     @media screen and (max-width: 1000px) {
@@ -82,7 +82,7 @@
 
     @media screen and (max-width: 850px) {
         &.hassubname {
-            padding-top: 30px;
+            padding-top: 1.8rem;
         }
     }
 }

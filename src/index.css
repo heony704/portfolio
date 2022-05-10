@@ -18,8 +18,3 @@ div {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 615px) {
-    html {
-        font-size: 12px;
-    }
-}
