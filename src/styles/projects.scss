@@ -57,6 +57,33 @@
             >div + div {
                 margin-top: 30px;
             }
+
+        }
+        
+        @media screen and (max-width: 900px) {
+            .line {
+                left: 26px;
+            }
+            
+            .projectList {
+                margin: 0 10px;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            .line {
+                left: 16px;
+            }
+            
+            .projectList {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 615px) {
+            .line {
+                display: none;
+            }
         }
     }
 }

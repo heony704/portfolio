@@ -33,10 +33,9 @@
 
     .tech {
         margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
 
-        p + p {
-            margin-left: 10px;
-        }
         >p {
             font-size: 1.1rem;
             display: inline-block;
@@ -45,6 +44,9 @@
             border-radius: 5px;
             color: firebrick;
             font-weight: 600;
+            
+            margin-right: 10px;
+            margin-top: 5px;
         }
     }
 
@@ -67,5 +69,20 @@
     .extrawrap {
         margin-top: 20px;
         padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        pre {
+            padding: 0;
+        }
+        .extrawrap {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        &.hassubname {
+            padding-top: 30px;
+        }
     }
 }

@@ -25,4 +25,13 @@
     .award + .award {
         margin-top: 3px;
     }
+
+    @media screen and (max-width: 940px) {
+        flex-direction: column;
+
+        .awardsname {
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
 }
