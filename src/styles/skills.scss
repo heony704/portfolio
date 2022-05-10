@@ -5,3 +5,10 @@
         padding-bottom: 0.3rem;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .skills img {
+        padding-right: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+}

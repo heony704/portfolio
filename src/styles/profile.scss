@@ -20,12 +20,16 @@
         .name {
             padding: 0 2.5rem;
             
+            >div {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 0.8rem;
+            }
             h1 {
                 font-size: 2.2rem;
-                font-weight: normal;
+                font-weight: 500;
 
                 white-space: pre-wrap;
-                padding-bottom: 0.8rem;
             }
             p {
                 font-size: 1.4rem;
@@ -45,26 +49,40 @@
             .name {
                 padding: 0;
 
-                h1 {
-                    padding-bottom: 0.6rem;
+                div {
+                    padding-bottom: 0.5rem;
                 }
             }
         }
     }
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 670px) {
         .info {
             flex-direction: column;
 
             >div + div {
-                padding-top: 25px;
+                padding-top: 1.3rem;
             }
             .name {
                 text-align: center;
-                h1 {
-                    padding-bottom: 5px;
+                div {
+                    padding-bottom: 0.3rem;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile .info >div + div {
+            padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .profile .info .name {
+        .english {
+            display: none;
         }
     }
 }
