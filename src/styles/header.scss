@@ -41,3 +41,9 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    header >div {
+        padding: 0 1.5rem;
+    }
+}

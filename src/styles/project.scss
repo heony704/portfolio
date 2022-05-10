@@ -161,3 +161,28 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .project .clickarea {
+        padding-bottom: 2rem;
+    }
+    .project .clickarea .name {
+        padding: 2rem 1.2rem 0 1.2rem;
+
+        >div { 
+            .prime {
+                .icon {
+                    font-size: 1.2rem;
+                    padding-bottom: 3px;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
