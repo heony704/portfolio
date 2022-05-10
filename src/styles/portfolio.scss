@@ -33,3 +33,18 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .portfolio > div {
+        padding: 0 1.5rem;
+
+        >div {
+            padding-top: 1.6rem;
+        }
+    }
+    .portfolio .bind {
+        >div + div {
+            margin-top: 1rem;
+        }
+    }
+}

@@ -64,7 +64,6 @@
             .line {
                 left: 26px;
             }
-            
             .projectList {
                 margin: 0 10px;
             }
@@ -74,7 +73,6 @@
             .line {
                 left: 16px;
             }
-            
             .projectList {
                 margin: 0;
             }
@@ -84,6 +82,21 @@
             .line {
                 display: none;
             }
+            .projectList {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projects .wrap-title {
+        padding-bottom: 0;
+    }
+    .projects .timeline .projectList {
+        padding-bottom: 0.5rem;
+        >div + div {
+            margin-top: 1rem;
         }
     }
 }

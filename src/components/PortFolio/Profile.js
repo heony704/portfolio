@@ -2,7 +2,7 @@ import '../../styles/profile.scss';
 import Contact from './Contact';
 
 function Profile({ profile }) {
-    const { self, name, job, email, github, velog, tel } = profile;
+    const { self, name, english, job, email, github, velog, tel } = profile;
 
     return (
         <div className="profile">
@@ -11,7 +11,10 @@ function Profile({ profile }) {
             </div>
             <div className="info">
                 <div className="name">
-                    <h1>{name}</h1>
+                    <div>
+                        <h1>{name}</h1>
+                        <h1 className="english">{`  |  ` + english}</h1>
+                    </div>
                     <p>{job}</p>
                 </div>
                 <Contact

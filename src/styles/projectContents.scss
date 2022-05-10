@@ -86,3 +86,21 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .projectContents {
+        padding: 0.6rem 1.2rem 2rem 1.2rem;
+
+        .tech >p {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.15rem 0.4rem;
+        }
+
+        pre {
+            margin-top: 1.6rem;
+            font-size: 1.1rem;
+            line-height: 140%;
+        }
+    }
+}
