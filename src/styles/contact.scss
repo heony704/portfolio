@@ -33,6 +33,12 @@
         }
     }
     a + a {
-        margin-top: 8px;
+        margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width: 948px) {
+        a + a {
+            margin-top: 0.3rem;
+        }
     }
 }

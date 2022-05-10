@@ -14,7 +14,7 @@
         width: 100%;
         cursor: pointer;
 
-        padding-bottom: 45px;
+        padding-bottom: 2.8rem;
         transition: none;
 
         &.clicked {
@@ -64,8 +64,8 @@
         }
 
         .name {
-            padding: 45px 40px 0 40px;
-            border-radius: 25px 25px 0 0;
+            padding: 2.8rem 2.5rem 0 2.5rem;
+            border-radius: 1.5rem 1.5rem 0 0;
             
             display: flex;
             align-items: center;
@@ -84,8 +84,8 @@
 
                     .icon {
                         font-size: 1.2rem;
-                        padding-right: 10px;
-                        padding-bottom: 3px;
+                        padding-right: 0.6rem;
+                        padding-bottom: 0.3rem;
                     }
     
                     h1 {
@@ -94,7 +94,7 @@
                 }
                 
                 p {
-                    margin-left: 15px;
+                    margin-left: 1rem;
                     color: dimgray;
                     font-size: 1.3rem;
                 }
@@ -141,7 +141,7 @@
                 .icon {
                     opacity: 50%;
                     font-size: 1.3rem;
-                    padding-bottom: 2px;
+                    padding-bottom: 0.1rem;
                     transition: all 0.2s ease-out;
                 }
                 h1 {
