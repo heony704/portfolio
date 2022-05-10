@@ -15,22 +15,22 @@
             cursor: pointer;
             font-size: 3.3rem;
             color: gray;
-            padding: 0 10px;
+            padding: 0 0.6rem;
         }
 
         .slide {
             overflow: hidden;
 
-            height: 270px;
-            width: 420px;
+            height: 18rem;
+            width: 26rem;
 
             .imgwrap {
                 display: flex;
                 transition: all 0.2s ease-out;
 
                 .img {
-                    height: 270px;
-                    width: 420px;
+                    height: 18rem;
+                    width: 26rem;
                     background-position: 50% 50%;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -41,7 +41,7 @@
     }
 
     .position {
-        margin-top: 15px;
+        margin-top: 1rem;
 
         display: flex;
         justify-content: center;
@@ -49,16 +49,71 @@
         >div {
             background: lightgray;
             border-radius: 100%;
-            height: 10px;
-            width: 10px;
+            height: 0.6rem;
+            width: 0.6rem;
             transition: all 0.2s ease-out;
         }
         >div + div {
-            margin-left: 20px;
+            margin-left: 1.2rem;
         }
 
         .current {
             background: gray;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carousel .imgslide .slide {
+        height: 16rem;
+        width: 23rem;
+        .imgwrap .img {
+            height: 16rem;
+            width: 23rem;
+        }
+    }
+    .carousel .imgslide .button {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel .imgslide .slide {
+        height: 14rem;
+        width: 21rem;
+        .imgwrap .img {
+            height: 14rem;
+            width: 21rem;
+        }
+    }
+    .carousel .imgslide .button {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .carousel .imgslide .button {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel .imgslide .slide {
+        height: 12rem;
+        width: 17rem;
+        .imgwrap .img {
+            height: 12rem;
+            width: 17rem;
+        }
+    }
+    .carousel .imgslide .button {
+        font-size: 2.8rem;
+    }
+    .carousel .position {
+        margin-top: 0.7rem;
+        >div {
+            height: 0.5rem;
+            width: 0.5rem;
         }
     }
 }
