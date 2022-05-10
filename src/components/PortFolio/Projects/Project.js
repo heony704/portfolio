@@ -21,8 +21,10 @@ function ProjectBox({ project, clicked, onClickFnc }) {
                     </div>
                     <div className={clicked ? 'name clicked' : 'name'}>
                         <div>
-                            <div className="icon">{icon}</div>
-                            <h1>{name}</h1>
+                            <div className="prime">
+                                <div className="icon">{icon}</div>
+                                <h1>{name}</h1>
+                            </div>
                             {subname && <p>{subname}</p>}
                         </div>
                     </div>
@@ -30,7 +32,11 @@ function ProjectBox({ project, clicked, onClickFnc }) {
             </div>
             {clicked && (
                 <div className="contents">
-                    <ProjectContents key={project.id} project={project} />
+                    <ProjectContents
+                        key={project.id}
+                        project={project}
+                        hasSubname={!!subname}
+                    />
                 </div>
             )}
         </div>

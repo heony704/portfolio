@@ -6,16 +6,21 @@ function Profile({ profile }) {
 
     return (
         <div className="profile">
-            <div className="info">
+            <div className="selfimg">
                 <img src={process.env.PUBLIC_URL + self} alt="self" />
-
+            </div>
+            <div className="info">
                 <div className="name">
                     <h1>{name}</h1>
                     <p>{job}</p>
                 </div>
+                <Contact
+                    email={email}
+                    github={github}
+                    velog={velog}
+                    tel={tel}
+                />
             </div>
-
-            <Contact email={email} github={github} velog={velog} tel={tel} />
         </div>
     );
 }

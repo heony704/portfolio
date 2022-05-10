@@ -12,3 +12,14 @@ body {
 div {
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 900px ) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 615px) {
+    html {
+        font-size: 12px;
+    }
+}
