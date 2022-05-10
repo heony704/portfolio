@@ -1,6 +1,5 @@
 .url {
     display: flex;
-    // align-items: center;
 
     >p {
         font-size: 1.1rem;
@@ -10,7 +9,7 @@
     >a {
         color: Forestgreen;
         font-size: 1.1rem;
-        margin-left: 13px;
+        margin-left: 0.8rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,13 +20,13 @@
         }
 
         >svg {
-            padding-left: 4px;
+            padding-left: 0.2rem;
             font-size: 1.2rem;
         }
     }
 
     & + & {
-        margin-top: 7px;
+        margin-top: 0.4rem;
     }
 
     @media screen and (max-width: 735px) {
@@ -39,7 +38,7 @@
         }
 
         & + & {
-            margin-top: 12px;
+            margin-top: 0.7rem;
         }
     }
 }
