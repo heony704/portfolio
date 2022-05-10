@@ -18,11 +18,11 @@ function ProjectContents({ project, hasSubname }) {
                     <p key={i}>{skill}</p>
                 ))}
             </div>
-            {/* {images && (
+            {images && (
                 <div className="carouselwrap">
                     <Carousel images={images} />
                 </div>
-            )} */}
+            )}
             <pre>{summary}</pre>
             {(url || awards) && (
                 <div className="extrawrap">
