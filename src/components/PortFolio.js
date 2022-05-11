@@ -6,7 +6,7 @@ import Skills from './PortFolio/Skills';
 import Certificate from './PortFolio/Certificate';
 import Projects from './PortFolio/Projects';
 
-function PortFolio({ portfolio }) {
+function Portfolio({ portfolio }) {
     const { profile, about, history, skills, certificate, projects } =
         portfolio;
 
@@ -26,4 +26,4 @@ function PortFolio({ portfolio }) {
     );
 }
 
-export default PortFolio;
+export default Portfolio;
