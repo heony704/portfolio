@@ -21,7 +21,7 @@ function Certificate({ certificate }) {
 function CertificatePdf({ certificate }) {
     return (
         <View style={styles.certificate}>
-            <TitlePdf title="CERTIFICATE" width={100} />
+            <TitlePdf title="CERTIFICATE" width={105} />
             {certificate.map((x, i) => (
                 <TableRowPdf
                     key={i}
