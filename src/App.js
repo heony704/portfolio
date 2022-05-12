@@ -1,7 +1,7 @@
 import './App.scss';
 import data from './data';
 import Header from './components/Header';
-import Portfolio from './components/Portfolio';
+import { Portfolio } from './components/Portfolio';
 import Footer from './components/Footer';
 
 function App() {

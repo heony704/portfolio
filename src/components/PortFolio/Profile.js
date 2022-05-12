@@ -1,5 +1,6 @@
 import '../../styles/profile.scss';
-import Contact from './Contact';
+import { Contact, ContactPdf } from './Contact';
+import { StyleSheet, View, Image, Text } from '@react-pdf/renderer';
 
 function Profile({ profile }) {
     const { self, name, english, job, email, github, velog, tel } = profile;
@@ -7,13 +8,15 @@ function Profile({ profile }) {
     return (
         <div className="profile">
             <div className="selfimg">
-                <img src={process.env.PUBLIC_URL + self} alt="self" />
+                <img src={self} alt="self" />
             </div>
             <div className="info">
                 <div className="name">
                     <div>
                         <h1>{name}</h1>
-                        <h1 className="english">{`  |  ` + english}</h1>
+                        {english && (
+                            <h1 className="english">{`  |  ` + english}</h1>
+                        )}
                     </div>
                     <p>{job}</p>
                 </div>
@@ -28,4 +31,50 @@ function Profile({ profile }) {
     );
 }
 
-export default Profile;
+function ProfilePdf({ profile }) {
+    const { self, name, english, job, email, github, velog, tel } = profile;
+
+    return (
+        <View style={styles.profile}>
+            <Image src={self} style={styles.selfimg} />
+            <View style={styles.info}>
+                <View style={styles.name}>
+                    <View style={styles.namecontents}>
+                        <Text style={styles.h}>{name}</Text>
+                        {english && <Text style={styles.h}> | {english}</Text>}
+                    </View>
+                    <Text style={styles.p}>{job}</Text>
+                </View>
+            </View>
+            <ContactPdf email={email} github={github} velog={velog} tel={tel} />
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    profile: {
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+    selfimg: { width: 70, height: 70 },
+    info: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        flex: ''
+    },
+    name: { paddingHorizontal: 25 },
+    namecontents: {
+        display: 'flex',
+        justifyContent: 'center',
+        paddingBottom: 6,
+        flexDirection: 'row'
+    },
+    h: { fontSize: 20, fontWeight: 500 },
+    p: { fontSize: 13, color: 'dimgray', paddingLeft: 1 }
+});
+
+export { Profile, ProfilePdf };

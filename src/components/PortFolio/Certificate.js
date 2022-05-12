@@ -1,5 +1,6 @@
-import Title from './Title';
-import TableRow from './TableRow';
+import { Title, TitlePdf } from './Title';
+import { TableRow, TableRowPdf } from './TableRow';
+import { StyleSheet, View } from '@react-pdf/renderer';
 
 function Certificate({ certificate }) {
     return (
@@ -17,4 +18,26 @@ function Certificate({ certificate }) {
     );
 }
 
-export default Certificate;
+function CertificatePdf({ certificate }) {
+    return (
+        <View style={styles.certificate}>
+            <TitlePdf title="CERTIFICATE" width={100} />
+            {certificate.map((x, i) => (
+                <TableRowPdf
+                    key={i}
+                    date={x.date}
+                    task={x.name}
+                    extra={x.issuer}
+                />
+            ))}
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    certificate: {
+        width: '50%'
+    }
+});
+
+export { Certificate, CertificatePdf };

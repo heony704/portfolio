@@ -1,7 +1,7 @@
 import '../styles/header.scss';
 import { BsDownload } from 'react-icons/bs';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PortfolioPdf from './PortfolioPdf';
+import { PortfolioPdf } from './Portfolio';
 
 function Header({ portfolio }) {
     return (
@@ -13,7 +13,9 @@ function Header({ portfolio }) {
                         document={<PortfolioPdf portfolio={portfolio} />}
                         fileName={`${portfolio.profile.name} 포트폴리오.pdf`}
                     >
-                        <BsDownload />
+                        {({ blob, url, loading, error }) =>
+                            loading ? 'Loading document...' : <BsDownload />
+                        }
                     </PDFDownloadLink>
                 </div>
             </div>

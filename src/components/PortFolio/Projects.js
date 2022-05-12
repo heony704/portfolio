@@ -1,7 +1,7 @@
 import '../../styles/projects.scss';
 import { useEffect, useState } from 'react';
 import Project from './Projects/Project';
-import Title from './Title';
+import { Title } from './Title';
 
 function Projects({ projects }) {
     const idList = [];
