@@ -1,6 +1,6 @@
 const data = {
     profile: {
-        self: '/images/self.png',
+        self: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/self.png',
         name: '이승헌',
         english: 'Seungheon Lee',
         job: 'Front-End Programmer',
@@ -58,10 +58,10 @@ const data = {
             skills: ['C', 'LPC1768', 'Cortec-M3'],
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166555430-5fcf9da7-d9db-4a76-a828-15eddffb9d6f.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.gif'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166544398-7f3e3975-8a17-4ea1-b429-4a2d71b55222.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_algorithm.png'
                 }
             ],
             summary:
@@ -77,13 +77,13 @@ const data = {
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536772-40216c6c-c257-4c4b-8d08-ba3491e58508.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536815-7b454233-ea78-49ae-b684-8d6313e071a8.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_front.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536757-26d5991f-fe4a-43ab-9a5d-e875cc146096.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_architecture.png'
                 }
             ],
             summary:
@@ -122,13 +122,13 @@ const data = {
             ],
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536845-ded83f0a-faa6-4238-a9de-15988f0c5f5d.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_main.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536699-e2081a12-eb27-4956-bb3a-22a61bf15de9.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_play1.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536844-89c4e078-0a07-4557-b73a-f78a324db03b.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_play2.png'
                 }
             ],
             summary:
@@ -150,10 +150,10 @@ const data = {
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/134497720-fc7d7243-a450-4ecb-8abd-c8351cfb07a0.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play1.gif'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/134697984-a5823575-0121-4114-9e71-aca2d311637a.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play2.gif'
                 }
             ],
             summary:
