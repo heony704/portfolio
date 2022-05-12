@@ -41,7 +41,11 @@ function ProfilePdf({ profile }) {
                 <View style={styles.name}>
                     <View style={styles.namecontents}>
                         <Text style={styles.h}>{name}</Text>
-                        {english && <Text style={styles.h}> | {english}</Text>}
+                        {english && (
+                            <Text style={[styles.h, { paddingLeft: 10 }]}>
+                                {'|  '.concat(english)}
+                            </Text>
+                        )}
                     </View>
                     <Text style={styles.p}>{job}</Text>
                 </View>

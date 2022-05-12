@@ -23,7 +23,7 @@ function TableRowPdf({ date, task, extra }) {
             </View>
             <View style={styles.contents}>
                 <Text>{task}</Text>
-                {extra && <Text> / {extra}</Text>}
+                {extra && <Text style={{ paddingLeft: 3 }}>/ {extra}</Text>}
             </View>
         </View>
     );
