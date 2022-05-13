@@ -2,7 +2,7 @@ import '../../styles/contact.scss';
 import { MdMail } from 'react-icons/md';
 import { FaGithub, FaVimeo } from 'react-icons/fa';
 import { AiFillPhone } from 'react-icons/ai';
-import { StyleSheet, View, Text, Svg, Path } from '@react-pdf/renderer';
+import { StyleSheet, View, Text, Svg, Path, Link } from '@react-pdf/renderer';
 
 function Contact({ email, github, velog, tel }) {
     return (
@@ -57,13 +57,17 @@ function ContactPdf({ email, github, velog }) {
             {github && (
                 <View style={styles.contactitem}>
                     <Github />
-                    <Text style={styles.p}>{github}</Text>
+                    <Link src={`https://${github}`} style={styles.p}>
+                        {github}
+                    </Link>
                 </View>
             )}
             {velog && (
                 <View style={styles.contactitem}>
                     <Velog />
-                    <Text style={styles.p}>{velog}</Text>
+                    <Link src={`https://${velog}`} style={styles.p}>
+                        {velog}
+                    </Link>
                 </View>
             )}
         </View>
@@ -82,7 +86,9 @@ const styles = StyleSheet.create({
     p: {
         marginLeft: 4,
         fontSize: 10,
-        fontWeight: 300
+        fontWeight: 300,
+        color: 'black',
+        textDecoration: 'none'
     }
 });
 

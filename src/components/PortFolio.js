@@ -7,7 +7,7 @@ import { About, AboutPdf } from './PortFolio/About';
 import { Skills, SkillsPdf } from './PortFolio/Skills';
 import { History, HistoryPdf } from './PortFolio/History';
 import { Certificate, CertificatePdf } from './PortFolio/Certificate';
-import Projects from './PortFolio/Projects';
+import { Projects, ProjectsPdf } from './PortFolio/Projects';
 
 function Portfolio({ portfolio }) {
     const { profile, about, skills, history, certificate, projects } =
@@ -43,6 +43,7 @@ function PortfolioPdf({ portfolio }) {
                     <HistoryPdf history={history} />
                     <CertificatePdf certificate={certificate} />
                 </View>
+                <ProjectsPdf projects={projects} />
             </Page>
         </Document>
     );

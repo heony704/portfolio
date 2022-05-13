@@ -1,6 +1,7 @@
 import '../../../styles/projectContents.scss';
 import Carousel from './Carousel';
-import ExtraInfo from './ExtraInfo';
+import { ExtraInfo, ExtraInfoPdf } from './ExtraInfo';
+import { StyleSheet, View, Image, Text } from '@react-pdf/renderer';
 
 function ProjectContents({ project, hasSubname }) {
     const { date, personnel, skills, images, summary, url, awards } = project;
@@ -33,4 +34,69 @@ function ProjectContents({ project, hasSubname }) {
     );
 }
 
-export default ProjectContents;
+function ProjectContentsPdf({ project }) {
+    const { date, personnel, skills, mainImg, summary, url, awards } = project;
+
+    return (
+        <View>
+            <View style={styles.date}>
+                <Text>{date}</Text>
+                <Text style={styles.personnel}>{personnel} 프로젝트</Text>
+            </View>
+            <View style={styles.tech}>
+                {skills.map((skill, i) => (
+                    <Text style={styles.skill} key={i}>
+                        {skill}
+                    </Text>
+                ))}
+            </View>
+            {mainImg && <Image src={mainImg} style={styles.image} />}
+            <Text style={styles.summary}>{summary}</Text>
+            {(url || awards) && <ExtraInfoPdf url={url} awards={awards} />}
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    date: {
+        display: 'flex',
+        flexDirection: 'row',
+        fontSize: 10,
+        color: 'dimgray',
+        fontWeight: 400,
+        paddingTop: 5
+    },
+    personnel: {
+        marginLeft: 8
+    },
+    tech: {
+        display: 'flex',
+        flexDirection: 'row',
+        paddingTop: 5
+    },
+    skill: {
+        backgroundColor: 'lightgray',
+        fontSize: 10,
+        paddingHorizontal: 4,
+        paddingVertical: 2,
+        color: 'firebrick',
+        borderRadius: 3,
+        marginRight: 5,
+        marginBottom: 3,
+        fontWeight: 500
+    },
+    image: {
+        maxHeight: 120,
+        objectFit: 'contain',
+        paddingTop: 10,
+        marginVertical: 5
+    },
+    summary: {
+        fontSize: 12,
+        fontWeight: 300,
+        paddingTop: 13,
+        lineHeight: 1.5
+    }
+});
+
+export { ProjectContents, ProjectContentsPdf };

@@ -1,6 +1,7 @@
 import '../../../styles/extrainfo.scss';
-import Url from './Url';
-import Awards from './Awards';
+import { Url, UrlPdf } from './Url';
+import { Awards, AwardsPdf } from './Awards';
+import { View } from '@react-pdf/renderer';
 
 function ExtraInfo({ url, awards }) {
     return (
@@ -11,4 +12,13 @@ function ExtraInfo({ url, awards }) {
     );
 }
 
-export default ExtraInfo;
+function ExtraInfoPdf({ url, awards }) {
+    return (
+        <View style={{ marginTop: 8 }}>
+            {url && <UrlPdf url={url} />}
+            {awards && <AwardsPdf awards={awards} />}
+        </View>
+    );
+}
+
+export { ExtraInfo, ExtraInfoPdf };
