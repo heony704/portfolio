@@ -56,6 +56,8 @@ const data = {
             date: '2018/03 - 2018/06',
             personnel: '팀',
             skills: ['C', 'LPC1768', 'Cortec-M3'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.png',
             images: [
                 {
                     src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.gif'
@@ -75,6 +77,8 @@ const data = {
             date: '2018/01 - 2018/11',
             personnel: '팀',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png',
             images: [
                 {
                     src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png'
@@ -120,6 +124,8 @@ const data = {
                 'Tomcat',
                 'Google Cloud Vision API'
             ],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_main.png',
             images: [
                 {
                     src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_main.png'
@@ -148,6 +154,8 @@ const data = {
             date: '2021.08 - 2021.09',
             personnel: '개인',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play.png',
             images: [
                 {
                     src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play1.gif'
