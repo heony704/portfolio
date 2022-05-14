@@ -1,6 +1,6 @@
 const data = {
     profile: {
-        self: '/images/self.png',
+        self: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/self.png',
         name: '이승헌',
         english: 'Seungheon Lee',
         job: 'Front-End Programmer',
@@ -21,19 +21,19 @@ const data = {
     skills: [
         {
             name: 'JavaScript',
-            imgSrc: 'https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black'
+            svgSrc: 'https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black'
         },
         {
             name: 'React',
-            imgSrc: 'https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black'
+            svgSrc: 'https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black'
         },
         {
             name: 'TypeScript',
-            imgSrc: 'https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white'
+            svgSrc: 'https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white'
         },
         {
-            name: 'Node.js',
-            imgSrc: 'https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white'
+            name: 'Node',
+            svgSrc: 'https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white'
         }
     ],
     certificate: [
@@ -56,12 +56,14 @@ const data = {
             date: '2018/03 - 2018/06',
             personnel: '팀',
             skills: ['C', 'LPC1768', 'Cortec-M3'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.png',
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166555430-5fcf9da7-d9db-4a76-a828-15eddffb9d6f.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.gif'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166544398-7f3e3975-8a17-4ea1-b429-4a2d71b55222.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_algorithm.png'
                 }
             ],
             summary:
@@ -75,15 +77,17 @@ const data = {
             date: '2018/01 - 2018/11',
             personnel: '팀',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png',
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536772-40216c6c-c257-4c4b-8d08-ba3491e58508.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536815-7b454233-ea78-49ae-b684-8d6313e071a8.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_front.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536757-26d5991f-fe4a-43ab-9a5d-e875cc146096.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_architecture.png'
                 }
             ],
             summary:
@@ -120,15 +124,17 @@ const data = {
                 'Tomcat',
                 'Google Cloud Vision API'
             ],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_main.png',
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536845-ded83f0a-faa6-4238-a9de-15988f0c5f5d.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_main.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536699-e2081a12-eb27-4956-bb3a-22a61bf15de9.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_play1.png'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/166536844-89c4e078-0a07-4557-b73a-f78a324db03b.png'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sprout_play2.png'
                 }
             ],
             summary:
@@ -148,12 +154,14 @@ const data = {
             date: '2021.08 - 2021.09',
             personnel: '개인',
             skills: ['TypeScript', 'Node.js', 'Discord.js'],
+            mainImg:
+                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play.png',
             images: [
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/134497720-fc7d7243-a450-4ecb-8abd-c8351cfb07a0.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play1.gif'
                 },
                 {
-                    src: 'https://user-images.githubusercontent.com/36994104/134697984-a5823575-0121-4114-9e71-aca2d311637a.gif'
+                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/sbot_play2.gif'
                 }
             ],
             summary:

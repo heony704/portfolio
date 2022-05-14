@@ -1,7 +1,8 @@
 import '../../styles/projects.scss';
 import { useEffect, useState } from 'react';
-import Project from './Projects/Project';
-import Title from './Title';
+import { Project, ProjectPdf } from './Projects/Project';
+import { Title, TitlePdf } from './Title';
+import { StyleSheet, View } from '@react-pdf/renderer';
 
 function Projects({ projects }) {
     const idList = [];
@@ -84,4 +85,43 @@ function Projects({ projects }) {
     );
 }
 
-export default Projects;
+function ProjectsPdf({ projects }) {
+    return (
+        <View>
+            <TitlePdf title="PROJECTS" width={87} />
+            <View style={styles.timeline}>
+                <View style={styles.line}></View>
+                <View style={styles.projectlist}>
+                    {projects
+                        .slice(0)
+                        .reverse()
+                        .map((project) => (
+                            <ProjectPdf key={project.id} project={project} />
+                        ))}
+                </View>
+            </View>
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    timeline: {
+        display: 'flex',
+        flexDirection: 'row',
+        marginTop: 10
+    },
+    line: {
+        width: 1,
+        backgroundColor: 'black',
+        position: 'relative',
+        left: 20
+    },
+    projectlist: {
+        display: 'flex',
+        width: '100%',
+        paddingRight: 15,
+        paddingBottom: 15
+    }
+});
+
+export { Projects, ProjectsPdf };
