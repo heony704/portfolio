@@ -1,0 +1,13 @@
+.spinner {
+    display: flex;
+    color: gray;
+    user-select: none;
+
+    animation: spin 1.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
