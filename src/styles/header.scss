@@ -30,7 +30,6 @@ header {
     
     a {
         font-size: 1.6rem;
-        cursor: pointer;
         transition: all 0.2s ease-out;
         
         display: flex;
@@ -43,6 +42,20 @@ header {
             color: grey;
         }
         &:active {
+            color: grey;
+        }
+    }
+
+    .btn {
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+        display: flex;
+        justify-content: center;
+        padding: 0.2rem;
+
+        
+        &:hover {
             color: grey;
         }
     }
