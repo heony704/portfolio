@@ -6,9 +6,12 @@ import Spinner from './Spinner';
 
 function Header({ portfolio }) {
     const agent = window.navigator.userAgent.toLowerCase();
-    const pdfable =
-        agent.indexOf('kakaotalk') < 0 &&
-        (agent.indexOf('whale') < 0 || agent.indexOf('mobile') < 0);
+    const pdfable = !(
+        agent.indexOf('kakaotalk') > 0 ||
+        (agent.indexOf('whale') > 0 && agent.indexOf('mobile') > 0) ||
+        agent.indexOf('gsa') > 0 ||
+        agent.indexOf('naver') > 0
+    );
 
     const onClick = () => {
         alert(
@@ -20,7 +23,7 @@ function Header({ portfolio }) {
         <header>
             <div>
                 <div className="header">
-                    <p className="logo">HEONY's POFO</p>
+                    <p className="logo">Seungheon's Portfolio</p>
                     {pdfable ? (
                         <PDFDownloadLink
                             document={<PortfolioPdf portfolio={portfolio} />}
