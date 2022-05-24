@@ -13,7 +13,7 @@ function Header({ portfolio }) {
             <div>
                 <div className="header">
                     <p className="logo">Seungheon's Portfolio</p>
-                    {isMobile && (
+                    {!isMobile && (
                         <PDFDownloadLink
                             document={<PortfolioPdf portfolio={portfolio} />}
                             fileName={`${portfolio.profile.name} 포트폴리오.pdf`}
