@@ -2,8 +2,8 @@ import '../../../styles/project.scss';
 import { ProjectContents, ProjectContentsPdf } from './ProjectContents';
 import { StyleSheet, View, Svg, Path, Text } from '@react-pdf/renderer';
 
-function Project({ project, clicked, onClickFnc }) {
-    const { id, icon, name, subname } = project;
+function Project({ index, project, clicked, onClickFnc }) {
+    const { icon, name, subname } = project;
 
     return (
         <div className="project">
@@ -11,7 +11,7 @@ function Project({ project, clicked, onClickFnc }) {
                 <div
                     className={clicked ? 'clickarea clicked' : 'clickarea'}
                     onClick={() => {
-                        onClickFnc(id);
+                        onClickFnc(index);
                     }}
                 >
                     <div className={clicked ? 'dot clicked' : 'dot'}>

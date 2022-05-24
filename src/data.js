@@ -50,7 +50,6 @@ const data = {
     ],
     projects: [
         {
-            id: 1,
             icon: '⭕',
             name: 'ARM Cortex-M3 틱택토',
             date: '2018/03 - 2018/06',
@@ -70,7 +69,6 @@ const data = {
                 'ARM Cortex-M3의 LCD에 표시된 화면을 보고 Keypad를 조작해서 진행하는 틱택토 게임입니다.\n\nLCD와 Keypad 입출력을 다루기 위해서 데이터시트와 소스코드를 토대로 프로세서의 구조를 분석했습니다. 프로세서가 어떻게 LCD와 Keypad를 조작하는지 알아내는 과정은 어려웠지만 이해한 후에는 프로그래밍이 어렵지 않고 즐거웠습니다. 구조와 동작원리에 대한 이해가 중요하다는 걸 알게 해준 프로젝트입니다.'
         },
         {
-            id: 2,
             icon: '👀',
             name: 'Seeing',
             subname: '장애인주차구역 불법주차 자동신고 디바이스',
@@ -111,7 +109,6 @@ const data = {
             ]
         },
         {
-            id: 3,
             icon: '🌱',
             name: 'Sprout',
             subname: '식물 관련 정보를 전달하는 다기능 웹사이트',
@@ -147,7 +144,6 @@ const data = {
             ]
         },
         {
-            id: 4,
             icon: '⏰',
             name: 'SBOT',
             subname: '캠스터디를 위해 제작된 디스코드 봇',
@@ -169,7 +165,6 @@ const data = {
             url: [{ name: 'GITHUB', src: 'https://github.com/SeungHe0n/SBOT' }]
         },
         {
-            id: 5,
             icon: '🌊',
             name: 'SINK',
             subname: '자신의 생각을 메모할 수 있는 웹사이트',
@@ -184,7 +179,6 @@ const data = {
             ]
         }
         // ,{
-        //     id: 6,
         //     icon: '📃',
         //     name: '포트폴리오 웹사이트',
         //     date: '2022/04 - 2022/04',

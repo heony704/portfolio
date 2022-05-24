@@ -5,20 +5,9 @@ import { Title, TitlePdf } from './Title';
 import { StyleSheet, View } from '@react-pdf/renderer';
 
 function Projects({ projects }) {
-    const idList = [];
-    for (const project of projects) {
-        idList.push({ id: project.id, visibility: false });
-    }
-
-    const [visibility, setVisibility] = useState(idList);
-    const onClickName = (id) => {
-        setVisibility(
-            visibility.map((project) =>
-                project.id === id
-                    ? { ...project, visibility: !project.visibility }
-                    : project
-            )
-        );
+    const [visible, setVisible] = useState(projects.map(() => false));
+    const onClickName = (index) => {
+        setVisible(visible.map((v, i) => (i === index ? !v : v)));
     };
 
     const [allBtn, setAllBtn] = useState(false);
@@ -28,28 +17,20 @@ function Projects({ projects }) {
 
     useEffect(() => {
         if (allBtn) {
-            setVisibility(
-                visibility.map((project) => {
-                    return { ...project, visibility: true };
-                })
-            );
-        } else if (!visibility.find((v) => !v.visibility)) {
-            setVisibility(
-                visibility.map((project) => {
-                    return { ...project, visibility: false };
-                })
-            );
+            setVisible(visible.map(() => true));
+        } else if (visible.indexOf(false) < 0) {
+            setVisible(visible.map(() => false));
         }
     }, [allBtn]);
 
     useEffect(() => {
-        if (visibility.find((v) => !v.visibility)) {
+        if (visible.indexOf(false) > -1) {
             setAllBtn(false);
         }
-        if (!allBtn && !visibility.find((v) => !v.visibility)) {
+        if (!allBtn && visible.indexOf(false) < 0) {
             setAllBtn(true);
         }
-    }, [visibility]);
+    }, [visible]);
 
     return (
         <div className="projects">
@@ -68,14 +49,12 @@ function Projects({ projects }) {
                     {projects
                         .slice(0)
                         .reverse()
-                        .map((project) => (
+                        .map((project, index) => (
                             <Project
-                                key={project.id}
+                                key={index}
+                                index={index}
                                 project={project}
-                                clicked={
-                                    visibility.find((v) => v.id === project.id)
-                                        .visibility
-                                }
+                                clicked={visible[index]}
                                 onClickFnc={onClickName}
                             />
                         ))}
@@ -95,8 +74,8 @@ function ProjectsPdf({ projects }) {
                     {projects
                         .slice(0)
                         .reverse()
-                        .map((project) => (
-                            <ProjectPdf key={project.id} project={project} />
+                        .map((project, i) => (
+                            <ProjectPdf key={i} project={project} />
                         ))}
                 </View>
             </View>
