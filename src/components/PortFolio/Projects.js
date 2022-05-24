@@ -17,9 +17,9 @@ function Projects({ projects }) {
 
     useEffect(() => {
         if (allBtn) {
-            setVisible(visible.map(() => true));
+            setVisible((prev) => prev.map(() => true));
         } else if (visible.indexOf(false) < 0) {
-            setVisible(visible.map(() => false));
+            setVisible((prev) => prev.map(() => false));
         }
     }, [allBtn]);
 
