@@ -12,12 +12,6 @@ const data = {
         contents:
             '안녕하세요! 사용자처럼 생각하는 프론트엔드 개발자, 이승헌입니다. \nJavaScript, TypeScript, React를 배우고 있으며 백엔드에도 관심이 있습니다. 작은 차이로 사용자 경험이 더 좋아지는 순간을 좋아합니다.'
     },
-    history: [
-        {
-            date: '2016/03 - 2021/08',
-            contents: '전북대학교 소프트웨어공학과'
-        }
-    ],
     skills: [
         {
             name: 'JavaScript',
@@ -36,6 +30,12 @@ const data = {
             svgSrc: 'https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white'
         }
     ],
+    history: [
+        {
+            date: '2016/03 - 2021/08',
+            contents: '전북대학교 소프트웨어공학과'
+        }
+    ],
     certificate: [
         {
             name: '정보처리기사',
@@ -49,31 +49,31 @@ const data = {
         }
     ],
     projects: [
-        {
-            icon: '⭕',
-            name: 'ARM Cortex-M3 틱택토',
-            date: '2018/03 - 2018/06',
-            personnel: '팀',
-            skills: ['C', 'LPC1768', 'Cortec-M3'],
-            mainImg:
-                'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.png',
-            images: [
-                {
-                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.gif'
-                },
-                {
-                    src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_algorithm.png'
-                }
-            ],
-            summary:
-                'ARM Cortex-M3의 LCD에 표시된 화면을 보고 Keypad를 조작해서 진행하는 틱택토 게임입니다.\n\nLCD와 Keypad 입출력을 다루기 위해서 데이터시트와 소스코드를 토대로 프로세서의 구조를 분석했습니다. 프로세서가 어떻게 LCD와 Keypad를 조작하는지 알아내는 과정은 어려웠지만 이해한 후에는 프로그래밍이 어렵지 않고 즐거웠습니다. 구조와 동작원리에 대한 이해가 중요하다는 걸 알게 해준 프로젝트입니다.'
-        },
+        // {
+        //     icon: '⭕',
+        //     name: 'ARM Cortex-M3 틱택토',
+        //     date: '2018/03 - 2018/06',
+        //     personnel: '팀',
+        //     skills: ['C', 'LPC1768', 'Cortec-M3'],
+        //     mainImg:
+        //         'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.png',
+        //     images: [
+        //         {
+        //             src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_play.gif'
+        //         },
+        //         {
+        //             src: 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/tictactoe_algorithm.png'
+        //         }
+        //     ],
+        //     summary:
+        //         'ARM Cortex-M3의 LCD에 표시된 화면을 보고 Keypad를 조작해서 진행하는 틱택토 게임입니다.\n\nLCD와 Keypad 입출력을 다루기 위해서 데이터시트와 소스코드를 토대로 프로세서의 구조를 분석했습니다. 프로세서가 어떻게 LCD와 Keypad를 조작하는지 알아내는 과정은 어려웠지만 이해한 후에는 프로그래밍이 어렵지 않고 즐거웠습니다. 구조와 동작원리에 대한 이해가 중요하다는 걸 알게 해준 프로젝트입니다.'
+        // },
         {
             icon: '👀',
             name: 'Seeing',
             subname: '장애인주차구역 불법주차 자동신고 디바이스',
             date: '2018/01 - 2018/11',
-            personnel: '팀',
+            personnel: '5인',
             skills: ['JavaScript', 'Node.js', 'Raspberry Pi', 'OpenCV'],
             mainImg:
                 'https://raw.githubusercontent.com/SeungHe0n/data/main/portfolio/seeing_back.png',
@@ -113,7 +113,7 @@ const data = {
             name: 'Sprout',
             subname: '식물 관련 정보를 전달하는 다기능 웹사이트',
             date: '2020/03 - 2020/06',
-            personnel: '팀',
+            personnel: '3인',
             skills: [
                 'Java',
                 'Maven',
