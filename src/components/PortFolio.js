@@ -2,7 +2,6 @@ import '../styles/portfolio.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, Document, Page, View } from '@react-pdf/renderer';
-import './PdfFont';
 import { Profile, ProfilePdf } from './PortFolio/Profile';
 import { About, AboutPdf } from './PortFolio/About';
 import { Skills, SkillsPdf } from './PortFolio/Skills';

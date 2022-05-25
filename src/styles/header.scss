@@ -27,35 +27,47 @@ header {
         font-size: 1.4rem;
         user-select: none;
     }
-    
-    a {
-        font-size: 1.6rem;
-        transition: all 0.2s ease-out;
-        
-        display: flex;
-        justify-content: center;
-
-        padding: 0.2rem;
-        color: black;
-        
-        &:hover {
-            color: grey;
-        }
-        &:active {
-            color: grey;
-        }
-    }
 
     .btn {
-        font-size: 1.6rem;
         cursor: pointer;
         transition: all 0.2s ease-out;
         display: flex;
         justify-content: center;
-        padding: 0.2rem;
+        padding: 0.5rem 0;
+        width: 5.5rem;
+        border-radius: 1rem;
 
-        
         &:hover {
+            color: grey;
+            background-color: #ececec;
+        }
+
+        &.pdf {
+            font-size: 1.15rem;
+        }
+
+        &.download {
+            font-size: 1.2rem;
+            align-items: center;
+
+            svg {
+                margin-left: 0.4rem;
+            }
+        }
+    }
+    
+    a {
+        font-size: 1.4rem;
+        transition: all 0.2s ease-out;
+        
+        display: flex;
+        justify-content: center;
+        color: black;
+        
+        width: 5.5rem;
+        text-decoration: none;
+        
+        &:active {
             color: grey;
         }
     }
