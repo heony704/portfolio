@@ -1,8 +1,18 @@
+import PropTypes from 'prop-types';
 import { Title, TitlePdf } from './Title';
 import { TableRow, TableRowPdf } from './TableRow';
 import { StyleSheet, View } from '@react-pdf/renderer';
 
-function History({ history }) {
+History.propTypes = {
+    history: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.string,
+            contents: PropTypes.string
+        })
+    )
+};
+
+export function History({ history }) {
     return (
         <div>
             <Title title="HISTORY" />
@@ -13,7 +23,16 @@ function History({ history }) {
     );
 }
 
-function HistoryPdf({ history }) {
+HistoryPdf.propTypes = {
+    history: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.string,
+            contents: PropTypes.string
+        })
+    )
+};
+
+export function HistoryPdf({ history }) {
     return (
         <View style={styles.history}>
             <TitlePdf title="HISTORY" width={70} />
@@ -29,5 +48,3 @@ const styles = StyleSheet.create({
         width: '50%'
     }
 });
-
-export { History, HistoryPdf };

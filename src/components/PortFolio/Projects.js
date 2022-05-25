@@ -1,10 +1,15 @@
 import '../../styles/projects.scss';
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { Project, ProjectPdf } from './Projects/Project';
 import { Title, TitlePdf } from './Title';
 import { StyleSheet, View } from '@react-pdf/renderer';
 
-function Projects({ projects }) {
+Projects.propTypes = {
+    projects: PropTypes.arrayOf(PropTypes.object)
+};
+
+export function Projects({ projects }) {
     const [visible, setVisible] = useState(projects.map(() => false));
     const onClickName = (index) => {
         setVisible(visible.map((v, i) => (i === index ? !v : v)));
@@ -64,7 +69,11 @@ function Projects({ projects }) {
     );
 }
 
-function ProjectsPdf({ projects }) {
+ProjectsPdf.propTypes = {
+    projects: PropTypes.arrayOf(PropTypes.object)
+};
+
+export function ProjectsPdf({ projects }) {
     return (
         <View>
             <TitlePdf title="PROJECTS" width={87} />
@@ -102,5 +111,3 @@ const styles = StyleSheet.create({
         paddingBottom: 15
     }
 });
-
-export { Projects, ProjectsPdf };

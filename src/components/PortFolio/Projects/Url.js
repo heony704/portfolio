@@ -1,8 +1,18 @@
 import '../../../styles/url.scss';
+import PropTypes from 'prop-types';
 import { FiExternalLink } from 'react-icons/fi';
 import { StyleSheet, View, Text, Link } from '@react-pdf/renderer';
 
-function Url({ url }) {
+Url.propTypes = {
+    url: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            src: PropTypes.string
+        })
+    )
+};
+
+export function Url({ url }) {
     return (
         <>
             {url.map((u, i) => (
@@ -18,7 +28,16 @@ function Url({ url }) {
     );
 }
 
-function UrlPdf({ url }) {
+UrlPdf.propTypes = {
+    url: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            src: PropTypes.string
+        })
+    )
+};
+
+export function UrlPdf({ url }) {
     return (
         <View>
             {url.map((u, i) => (
@@ -50,5 +69,3 @@ const styles = StyleSheet.create({
         fontWeight: 300
     }
 });
-
-export { Url, UrlPdf };

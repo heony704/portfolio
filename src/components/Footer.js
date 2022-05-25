@@ -1,11 +1,9 @@
 import '../styles/footer.scss';
 
-function Footer() {
+export default function Footer() {
     return (
         <footer>
             <p>developed by seungheon Lee .</p>
         </footer>
     );
 }
-
-export default Footer;

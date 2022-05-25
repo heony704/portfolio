@@ -1,7 +1,12 @@
 import '../../styles/title.scss';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text } from '@react-pdf/renderer';
 
-function Title({ title }) {
+Title.propTypes = {
+    title: PropTypes.string.isRequired
+};
+
+export function Title({ title }) {
     return (
         <div className="title">
             <div>
@@ -12,7 +17,11 @@ function Title({ title }) {
     );
 }
 
-function TitlePdf({ title, width }) {
+TitlePdf.propTypes = {
+    title: PropTypes.string.isRequired
+};
+
+export function TitlePdf({ title, width }) {
     return (
         <View style={styles.title}>
             <View style={styles.wrap}>
@@ -42,5 +51,3 @@ const styles = StyleSheet.create({
         fontWeight: 500
     }
 });
-
-export { Title, TitlePdf };

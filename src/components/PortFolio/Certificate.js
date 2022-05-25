@@ -1,8 +1,19 @@
+import PropTypes from 'prop-types';
 import { Title, TitlePdf } from './Title';
 import { TableRow, TableRowPdf } from './TableRow';
 import { StyleSheet, View } from '@react-pdf/renderer';
 
-function Certificate({ certificate }) {
+Certificate.propTypes = {
+    certificate: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            issuer: PropTypes.string,
+            date: PropTypes.string
+        })
+    )
+};
+
+export function Certificate({ certificate }) {
     return (
         <div>
             <Title title="CERTIFICATE" />
@@ -18,7 +29,17 @@ function Certificate({ certificate }) {
     );
 }
 
-function CertificatePdf({ certificate }) {
+CertificatePdf.propTypes = {
+    certificate: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            issuer: PropTypes.string,
+            date: PropTypes.string
+        })
+    )
+};
+
+export function CertificatePdf({ certificate }) {
     return (
         <View style={styles.certificate}>
             <TitlePdf title="CERTIFICATE" width={105} />
@@ -39,5 +60,3 @@ const styles = StyleSheet.create({
         width: '50%'
     }
 });
-
-export { Certificate, CertificatePdf };

@@ -1,8 +1,18 @@
 import '../../styles/skills.scss';
+import PropTypes from 'prop-types';
 import { Title, TitlePdf } from './Title';
 import { StyleSheet, View, Image } from '@react-pdf/renderer';
 
-function Skills({ skills }) {
+Skills.propTypes = {
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            svgSrc: PropTypes.string
+        })
+    )
+};
+
+export function Skills({ skills }) {
     return (
         <div className="skills">
             <Title title="SKILLS" />
@@ -15,7 +25,16 @@ function Skills({ skills }) {
     );
 }
 
-function SkillsPdf({ skills }) {
+SkillsPdf.propTypes = {
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string,
+            svgSrc: PropTypes.string
+        })
+    )
+};
+
+export function SkillsPdf({ skills }) {
     return (
         <View>
             <TitlePdf title="SKILLS" width={55} />
@@ -43,5 +62,3 @@ const styles = StyleSheet.create({
         paddingBottom: 5
     }
 });
-
-export { Skills, SkillsPdf };

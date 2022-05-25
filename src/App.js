@@ -4,7 +4,7 @@ import Header from './components/Header';
 import { Portfolio } from './components/Portfolio';
 import Footer from './components/Footer';
 
-function App() {
+export default function App() {
     return (
         <div className="body">
             <Header portfolio={data} />
@@ -13,5 +13,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

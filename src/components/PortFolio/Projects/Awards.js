@@ -1,7 +1,17 @@
 import '../../../styles/awards.scss';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text } from '@react-pdf/renderer';
 
-function Awards({ awards }) {
+Awards.propTypes = {
+    awards: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.string,
+            name: PropTypes.string
+        })
+    )
+};
+
+export function Awards({ awards }) {
     return (
         <div className="awards">
             <div className="awardstitle">
@@ -19,7 +29,16 @@ function Awards({ awards }) {
     );
 }
 
-function AwardsPdf({ awards }) {
+AwardsPdf.propTypes = {
+    awards: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.string,
+            name: PropTypes.string
+        })
+    )
+};
+
+export function AwardsPdf({ awards }) {
     return (
         <View style={styles.awards}>
             <Text style={styles.title}>AWARDS</Text>
@@ -58,5 +77,3 @@ const styles = StyleSheet.create({
         color: 'gray'
     }
 });
-
-export { Awards, AwardsPdf };

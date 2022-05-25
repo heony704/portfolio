@@ -1,9 +1,15 @@
 import '../../../styles/projectContents.scss';
+import PropTypes from 'prop-types';
 import Carousel from './Carousel';
 import { ExtraInfo, ExtraInfoPdf } from './ExtraInfo';
 import { StyleSheet, View, Image, Text } from '@react-pdf/renderer';
 
-function ProjectContents({ project, hasSubname }) {
+ProjectContents.propTypes = {
+    project: PropTypes.object,
+    hasSubname: PropTypes.bool
+};
+
+export function ProjectContents({ project, hasSubname }) {
     const { date, personnel, skills, images, summary, url, awards } = project;
 
     return (
@@ -34,7 +40,12 @@ function ProjectContents({ project, hasSubname }) {
     );
 }
 
-function ProjectContentsPdf({ project }) {
+ProjectContentsPdf.propTypes = {
+    project: PropTypes.object,
+    hasSubname: PropTypes.bool
+};
+
+export function ProjectContentsPdf({ project }) {
     const { date, personnel, skills, mainImg, summary, url, awards } = project;
 
     return (
@@ -98,5 +109,3 @@ const styles = StyleSheet.create({
         lineHeight: 1.5
     }
 });
-
-export { ProjectContents, ProjectContentsPdf };

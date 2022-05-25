@@ -1,10 +1,18 @@
 import '../../styles/contact.scss';
+import PropTypes from 'prop-types';
 import { MdMail } from 'react-icons/md';
 import { FaGithub, FaVimeo } from 'react-icons/fa';
 import { AiFillPhone } from 'react-icons/ai';
 import { StyleSheet, View, Text, Svg, Path, Link } from '@react-pdf/renderer';
 
-function Contact({ email, github, velog, tel }) {
+Contact.propTypes = {
+    email: PropTypes.string,
+    github: PropTypes.string,
+    velog: PropTypes.string,
+    tel: PropTypes.string
+};
+
+export function Contact({ email, github, velog, tel }) {
     return (
         <div className="contact">
             {tel && (
@@ -45,7 +53,14 @@ function Contact({ email, github, velog, tel }) {
     );
 }
 
-function ContactPdf({ email, github, velog }) {
+ContactPdf.propTypes = {
+    email: PropTypes.string,
+    github: PropTypes.string,
+    velog: PropTypes.string,
+    tel: PropTypes.string
+};
+
+export function ContactPdf({ email, github, velog }) {
     return (
         <View style={styles.contact}>
             {email && (
@@ -117,5 +132,3 @@ const Velog = () => (
         />
     </Svg>
 );
-
-export { Contact, ContactPdf };

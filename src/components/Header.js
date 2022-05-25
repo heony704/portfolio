@@ -1,10 +1,15 @@
 import '../styles/header.scss';
+import PropTypes from 'prop-types';
 import { BsDownload } from 'react-icons/bs';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { PortfolioPdf } from './Portfolio';
 import Spinner from './Spinner';
 
-function Header({ portfolio }) {
+Header.propTypes = {
+    portfolio: PropTypes.object
+};
+
+export default function Header({ portfolio }) {
     const agent = window.navigator.userAgent.toLowerCase();
     const isMobile = agent.indexOf('moblie') > -1;
 
@@ -28,5 +33,3 @@ function Header({ portfolio }) {
         </header>
     );
 }
-
-export default Header;

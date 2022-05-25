@@ -1,5 +1,6 @@
 import '../styles/portfolio.scss';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Document, Page, View } from '@react-pdf/renderer';
 import './PdfFont';
 import { Profile, ProfilePdf } from './PortFolio/Profile';
@@ -9,7 +10,11 @@ import { History, HistoryPdf } from './PortFolio/History';
 import { Certificate, CertificatePdf } from './PortFolio/Certificate';
 import { Projects, ProjectsPdf } from './PortFolio/Projects';
 
-function Portfolio({ portfolio }) {
+Portfolio.propTypes = {
+    portfolio: PropTypes.object
+};
+
+export function Portfolio({ portfolio }) {
     const { profile, about, skills, history, certificate, projects } =
         portfolio;
 
@@ -29,7 +34,11 @@ function Portfolio({ portfolio }) {
     );
 }
 
-function PortfolioPdf({ portfolio }) {
+PortfolioPdf.propTypes = {
+    portfolio: PropTypes.object
+};
+
+export function PortfolioPdf({ portfolio }) {
     const { profile, about, skills, history, certificate, projects } =
         portfolio;
 
@@ -61,5 +70,3 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     }
 });
-
-export { Portfolio, PortfolioPdf };

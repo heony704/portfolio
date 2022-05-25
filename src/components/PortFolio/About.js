@@ -1,7 +1,15 @@
 import '../../styles/about.scss';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text } from '@react-pdf/renderer';
 
-function About({ about }) {
+About.propTypes = {
+    about: PropTypes.shape({
+        title: PropTypes.string,
+        contents: PropTypes.string
+    })
+};
+
+export function About({ about }) {
     const { title, contents } = about;
 
     return (
@@ -12,7 +20,14 @@ function About({ about }) {
     );
 }
 
-function AboutPdf({ about }) {
+AboutPdf.propTypes = {
+    about: PropTypes.shape({
+        title: PropTypes.string,
+        contents: PropTypes.string
+    })
+};
+
+export function AboutPdf({ about }) {
     const { title, contents } = about;
 
     return (
@@ -36,5 +51,3 @@ const styles = StyleSheet.create({
         lineHeight: 1.5
     }
 });
-
-export { About, AboutPdf };

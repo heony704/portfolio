@@ -1,7 +1,14 @@
 import '../../styles/tablerow.scss';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text } from '@react-pdf/renderer';
 
-function TableRow({ date, task, extra }) {
+TableRow.propTypes = {
+    date: PropTypes.string.isRequired,
+    task: PropTypes.string.isRequired,
+    extra: PropTypes.string
+};
+
+export function TableRow({ date, task, extra }) {
     return (
         <div className="tablerow">
             <div className="date">
@@ -15,7 +22,13 @@ function TableRow({ date, task, extra }) {
     );
 }
 
-function TableRowPdf({ date, task, extra }) {
+TableRowPdf.propTypes = {
+    date: PropTypes.string.isRequired,
+    task: PropTypes.string.isRequired,
+    extra: PropTypes.string
+};
+
+export function TableRowPdf({ date, task, extra }) {
     return (
         <View style={styles.tablerow}>
             <View style={styles.wrap}>
@@ -58,5 +71,3 @@ const styles = StyleSheet.create({
         paddingTop: 2
     }
 });
-
-export { TableRow, TableRowPdf };

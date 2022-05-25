@@ -1,8 +1,16 @@
 import '../../../styles/project.scss';
+import PropTypes from 'prop-types';
 import { ProjectContents, ProjectContentsPdf } from './ProjectContents';
 import { StyleSheet, View, Svg, Path, Text } from '@react-pdf/renderer';
 
-function Project({ index, project, clicked, onClickFnc }) {
+Project.propTypes = {
+    index: PropTypes.number,
+    project: PropTypes.object,
+    clicked: PropTypes.bool,
+    onClickFnc: PropTypes.func
+};
+
+export function Project({ index, project, clicked, onClickFnc }) {
     const { icon, name, subname } = project;
 
     return (
@@ -40,7 +48,14 @@ function Project({ index, project, clicked, onClickFnc }) {
     );
 }
 
-function ProjectPdf({ project }) {
+ProjectPdf.propTypes = {
+    index: PropTypes.number,
+    project: PropTypes.object,
+    clicked: PropTypes.bool,
+    onClickFnc: PropTypes.func
+};
+
+export function ProjectPdf({ project }) {
     const { icon, name, subname } = project;
 
     return (
@@ -108,5 +123,3 @@ const styles = StyleSheet.create({
         color: 'dimgray'
     }
 });
-
-export { Project, ProjectPdf };

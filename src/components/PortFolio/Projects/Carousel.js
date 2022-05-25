@@ -1,9 +1,14 @@
 import '../../../styles/carousel.scss';
+import PropTypes from 'prop-types';
 import { useEffect, useState, useRef } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoChevronForwardOutline } from 'react-icons/io5';
 
-function Carousel({ images }) {
+Carousel.propTypes = {
+    images: PropTypes.arrayOf(PropTypes.object)
+};
+
+export default function Carousel({ images }) {
     const [current, setCurrent] = useState(0);
     const [style, setStyle] = useState({
         marginLeft: `-${current}00%`
@@ -65,5 +70,3 @@ function Carousel({ images }) {
         </div>
     );
 }
-
-export default Carousel;

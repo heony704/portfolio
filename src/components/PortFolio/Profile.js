@@ -1,8 +1,13 @@
 import '../../styles/profile.scss';
+import PropTypes from 'prop-types';
 import { Contact, ContactPdf } from './Contact';
 import { StyleSheet, View, Image, Text } from '@react-pdf/renderer';
 
-function Profile({ profile }) {
+Profile.propTypes = {
+    profile: PropTypes.object
+};
+
+export function Profile({ profile }) {
     const { self, name, english, job, email, github, velog, tel } = profile;
 
     return (
@@ -31,7 +36,11 @@ function Profile({ profile }) {
     );
 }
 
-function ProfilePdf({ profile }) {
+ProfilePdf.propTypes = {
+    profile: PropTypes.object
+};
+
+export function ProfilePdf({ profile }) {
     const { self, name, english, job, email, github, velog, tel } = profile;
 
     return (
@@ -80,5 +89,3 @@ const styles = StyleSheet.create({
     h: { fontSize: 20, fontWeight: 500 },
     p: { fontSize: 13, color: 'dimgray', paddingLeft: 1 }
 });
-
-export { Profile, ProfilePdf };
