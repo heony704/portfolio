@@ -12,8 +12,8 @@ Header.propTypes = {
 };
 
 export default function Header({ portfolio }) {
-    const agent = window.navigator.userAgent.toLowerCase();
-    const isMobile = agent.indexOf('moblie') > -1;
+    const isMobile =
+        window.navigator.userAgent.toLowerCase().indexOf('mobile') > -1;
 
     return (
         <header>
