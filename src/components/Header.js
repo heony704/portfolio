@@ -1,7 +1,6 @@
 import '../styles/header.scss';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { BsDownload } from 'react-icons/bs';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { PortfolioPdf } from './Portfolio';
 import Spinner from './Spinner';
@@ -37,17 +36,12 @@ function PdfBtn({ portfolio }) {
         <>
             {download ? (
                 <PDFDownloadLink
+                    className="btn download"
                     document={<PortfolioPdf portfolio={portfolio} />}
                     fileName={`${portfolio.profile.name} 포트폴리오.pdf`}
                 >
                     {({ blob, url, loading, error }) =>
-                        loading ? (
-                            <Spinner />
-                        ) : (
-                            <div className="btn download">
-                                PDF <BsDownload />
-                            </div>
-                        )
+                        loading ? <Spinner /> : '다운로드'
                     }
                 </PDFDownloadLink>
             ) : (

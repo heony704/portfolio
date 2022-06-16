@@ -31,44 +31,40 @@ header {
     .btn {
         cursor: pointer;
         transition: all 0.2s ease-out;
+        height: 2.5rem;
+        width: 7rem;
+        border-radius: 1.2rem;
         display: flex;
         justify-content: center;
-        padding: 0.5rem 0;
-        width: 5.5rem;
-        border-radius: 1rem;
-
-        &:hover {
-            color: grey;
-            background-color: #ececec;
-        }
+        align-items: center;
 
         &.pdf {
             font-size: 1.15rem;
+            color: dimgray;
+            border: 0.1rem solid dimgray;
+
+            &:hover {
+                color: grey;
+                background-color: #ececec;
+            }
         }
 
         &.download {
             font-size: 1.2rem;
-            align-items: center;
+            background-color: dimgray;
+            color: white;
+            font-weight: 300;
+            text-decoration: none;
+            border: none;
+
+            &:active {
+                color: grey;
+            }
 
             svg {
-                margin-left: 0.4rem;
+                font-size: 1.3rem;
+                color: white;
             }
-        }
-    }
-    
-    a {
-        font-size: 1.4rem;
-        transition: all 0.2s ease-out;
-        
-        display: flex;
-        justify-content: center;
-        color: black;
-        
-        width: 5.5rem;
-        text-decoration: none;
-        
-        &:active {
-            color: grey;
         }
     }
 }
