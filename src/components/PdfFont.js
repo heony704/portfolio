@@ -1,43 +1,32 @@
 import { Font } from '@react-pdf/renderer';
+import thin from '../fonts/Pretendard-Thin.ttf';
+import light from '../fonts/Pretendard-Light.ttf';
+import extralight from '../fonts/Pretendard-ExtraLight.ttf';
+import regular from '../fonts/Pretendard-Regular.ttf';
+import medium from '../fonts/Pretendard-Medium.ttf';
 
 Font.register({
     family: 'Pretendard',
     fonts: [
         {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Thin.ttf',
+            src: thin,
             fontWeight: 100
         },
         {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Light.ttf',
+            src: light,
             fontWeight: 200
         },
         {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-ExtraLight.ttf',
+            src: extralight,
             fontWeight: 300
         },
         {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Regular.ttf',
+            src: regular,
             fontWeight: 400
         },
         {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Medium.ttf',
+            src: medium,
             fontWeight: 500
-        },
-        {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-SemiBold.ttf',
-            fontWeight: 600
-        },
-        {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Bold.ttf',
-            fontWeight: 700
-        },
-        {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-ExtraBold.ttf',
-            fontWeight: 800
-        },
-        {
-            src: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/public/static/alternative/Pretendard-Black.ttf',
-            fontWeight: 900
         }
     ]
 });
