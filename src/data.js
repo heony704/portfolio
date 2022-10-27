@@ -4,8 +4,8 @@ const data = {
         name: '이승헌',
         english: 'Seungheon Lee',
         job: 'Front-End Programmer',
-        email: 'lsheony704@gmail.com',
-        github: 'github.com/SeungHe0n',
+        email: 'heony704@gmail.com',
+        github: 'github.com/heony704',
         velog: 'velog.io/@heony'
     },
     about: {
