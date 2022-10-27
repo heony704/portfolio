@@ -162,7 +162,7 @@ const data = {
             ],
             summary:
                 '디스코드로 캠스터디를 진행하던 중, 스터디원이 스터디 관련 기능이 있으면 좋겠다고 건의해서 만들게 된 디스코드 봇입니다. 스톱워치로 공부시간을 체크할 수 있고 체크한 시간을 바탕으로 하루동안 공부한 시간을 알려줍니다.\n\n- 오라클 클라우드 인프라(OCI)에 인스턴스를 만들어 사용하며 서버 장애 조치 및 사용자 피드백에 따라 기능 수정\n- TypeScript를 사용해 타입 관련 오류를 줄임',
-            url: [{ name: 'GITHUB', src: 'https://github.com/SeungHe0n/SBOT' }]
+            url: [{ name: 'GITHUB', src: 'https://github.com/heony704/SBOT' }]
         },
         {
             icon: '🌊',
@@ -174,8 +174,8 @@ const data = {
             summary:
                 '메모를 작성, 수정, 삭제, 검색할 수 있는 웹사이트입니다. 아이디어를 간단히 작성하고 검색할 수 있는 웹사이트가 필요해서 직접 만들었습니다.\n\n- UX를 위해서 컴포넌트 동작을 부드럽게 만듦',
             url: [
-                { name: 'GITHUB', src: 'https://github.com/SeungHe0n/sink' },
-                { name: 'URL', src: 'https://seunghe0n.github.io/sink/' }
+                { name: 'GITHUB', src: 'https://github.com/heony704/sink' },
+                { name: 'URL', src: 'https://heony704.github.io/sink/' }
             ]
         },
         {
@@ -189,7 +189,7 @@ const data = {
             url: [
                 {
                     name: 'github',
-                    src: 'https://github.com/SeungHe0n/portfolio'
+                    src: 'https://github.com/heony704/portfolio'
                 }
             ]
         }
